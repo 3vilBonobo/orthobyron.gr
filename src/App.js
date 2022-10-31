@@ -1,4 +1,7 @@
 import './App.css';
+import { useState, useEffect } from 'react';
+import DotLoader from 'react-spinners/DotLoader';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/routes/Home';
@@ -16,25 +19,42 @@ import NotFound from './components/routes/NotFound';
 import Footer from './components/Footer';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+  const [color, setColor] = useState('#ffffff');
+  useEffect(() => {
+    setLoading(false);
+  }, [App]);
+
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="doctor" element={<Doctor />} />
-        <Route path="clinics" element={<Clinics />} />
-        <Route path="ageGroups" element={<AgeGroups />} />
-        <Route path="therapies" element={<Therapies />} />
-        <Route path="oralHygiene" element={<OralHygiene />} />
-        <Route path="advice" element={<Advice />} />
-        <Route path="firstAid" element={<FirstAid />} />
-        <Route path="emergencies" element={<Emergencies />} />
-        <Route path="faq" element={<Faq />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-        <Route exact path="/" element={<Home />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <>
+      <div className="sweet-loading">
+        <DotLoader
+          color={color}
+          loading={loading}
+          size={150}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="doctor" element={<Doctor />} />
+          <Route path="clinics" element={<Clinics />} />
+          <Route path="ageGroups" element={<AgeGroups />} />
+          <Route path="therapies" element={<Therapies />} />
+          <Route path="oralHygiene" element={<OralHygiene />} />
+          <Route path="advice" element={<Advice />} />
+          <Route path="firstAid" element={<FirstAid />} />
+          <Route path="emergencies" element={<Emergencies />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 };
 
