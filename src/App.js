@@ -20,16 +20,15 @@ import Footer from './components/Footer';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  const [color, setColor] = useState('#ffffff');
+
   useEffect(() => {
     setLoading(false);
-  }, [App]);
+  }, []);
 
   return (
     <>
       <div className="sweet-loading">
         <DotLoader
-          color={color}
           loading={loading}
           size={150}
           aria-label="Loading Spinner"
