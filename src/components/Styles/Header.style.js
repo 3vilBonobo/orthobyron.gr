@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 export const StyledHeader = styled.header`
   width: 100%;
   background-color: #fff;
+  @media screen and (min-width: 768px) {
+    background-color: rgba(30, 52, 94);
+  }
 `;
 
 export const StyledBannerTop = styled.img`
@@ -45,4 +48,11 @@ export const StyledCTA = styled(Link)`
 export const StyledLogo = styled.img`
   width: 60%;
   height: auto;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: auto;
+  }
 `;

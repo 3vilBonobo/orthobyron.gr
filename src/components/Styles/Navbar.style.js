@@ -45,6 +45,7 @@ export const StyledNavbarContainer = styled.nav`
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
   transition: 0.5s;
   @media screen and (min-width: 768px) {
+    width: 60%;
     left: 0;
     transition: 0s;
   }
