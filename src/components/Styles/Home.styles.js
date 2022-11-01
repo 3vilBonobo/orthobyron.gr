@@ -49,3 +49,18 @@ export const StyledIntroSection = styled.section`
   font-style: italic;
   text-align: center;
 `;
+
+export const StyledReviewsSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #1e345e;
+`;
+
+export const StyledTreatmentsSection = styled.section`
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+`;

@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Home from './components/routes/Home';
 import Doctor from './components/routes/Doctor';
 import Clinics from './components/routes/Clinics';
-import Therapies from './components/routes/Therapies';
+import Treatments from './components/routes/Treatments';
 import AgeGroups from './components/routes/AgeGroups';
 import OralHygiene from './components/routes/OralHygiene';
 import Advice from './components/routes/Advice';
@@ -41,7 +41,7 @@ const App = () => {
           <Route path="doctor" element={<Doctor />} />
           <Route path="clinics" element={<Clinics />} />
           <Route path="ageGroups" element={<AgeGroups />} />
-          <Route path="therapies" element={<Therapies />} />
+          <Route path="treatments" element={<Treatments />} />
           <Route path="oralHygiene" element={<OralHygiene />} />
           <Route path="advice" element={<Advice />} />
           <Route path="firstAid" element={<FirstAid />} />
