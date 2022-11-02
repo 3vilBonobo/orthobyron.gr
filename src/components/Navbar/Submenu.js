@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { StyledSubmenu, StyledSubmenuLink } from '../styles/Navbar.style';
 const Submenu = ({ submenus, submenu, showSidebar }) => {
   return (

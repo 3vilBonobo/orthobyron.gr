@@ -6,15 +6,12 @@ export const StyledHeader = styled.header`
   background-color: #fff;
   @media screen and (min-width: 768px) {
     background-color: rgba(30, 52, 94);
+    display: flex;
   }
 `;
 
 export const StyledBannerTop = styled.img`
   width: 100%;
-  @media screen and (min-width: 768px) {
-    width: 40%;
-    height: auto;
-  }
 `;
 
 export const StyledMidHeader = styled.div`

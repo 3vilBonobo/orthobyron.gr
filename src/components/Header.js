@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <StyledHeader>
-      <a href={BannerPdf} target="_blank">
+      <a href={BannerPdf} target="_blank" rel="noreferrer">
         <StyledBannerTop src={BannerTop} alt="EFKA Banner" />
       </a>
       <StyledMidHeader>
