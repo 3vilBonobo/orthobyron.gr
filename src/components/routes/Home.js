@@ -1,6 +1,6 @@
 import Salon1 from '../../assets/salon1.jpg';
 import Treatment from '../Treatment';
-import { intro, treatments } from '../../data/data';
+import { intro } from '../../data/data';
 import ReviewsCarousel from '../ReviewsCarousel';
 import {
   StyledHero,
@@ -28,9 +28,7 @@ const Home = () => {
       </StyledReviewsSection>
 
       <StyledTreatmentsSection>
-        {treatments.map((item, index) => {
-          return <Treatment key={index} treatments={item} />;
-        })}
+        <Treatment />
       </StyledTreatmentsSection>
     </>
   );

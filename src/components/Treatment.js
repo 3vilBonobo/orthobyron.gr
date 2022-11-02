@@ -1,14 +1,22 @@
 import {
   StyledTreatmentContainer,
+  StyledTreatmentBox,
   StyledTreatmentImage,
   StyledTreatmentTitle,
 } from './styles/Treatment.style';
+import { treatments } from '../data/data';
 
-const Treatment = ({ treatments }) => {
+const Treatment = () => {
   return (
     <StyledTreatmentContainer>
-      <StyledTreatmentTitle>{treatments.name}</StyledTreatmentTitle>
-      <StyledTreatmentImage src="../assets/metallika-siderakia.jpg" />
+      {treatments.map((item, index) => {
+        return (
+          <StyledTreatmentBox key={index}>
+            <StyledTreatmentTitle>{item.name}</StyledTreatmentTitle>
+            <StyledTreatmentImage src={item.image} />
+          </StyledTreatmentBox>
+        );
+      })}
     </StyledTreatmentContainer>
   );
 };

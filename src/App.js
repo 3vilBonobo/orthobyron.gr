@@ -8,6 +8,11 @@ import Home from './components/routes/Home';
 import Doctor from './components/routes/Doctor';
 import Clinics from './components/routes/Clinics';
 import Treatments from './components/routes/Treatments';
+import InvisibleBraces from './components/InvisibleBraces';
+import TongueBraces from './components/TongueBraces';
+import MetalBraces from './components/MetalBraces';
+import MovingBraces from './components/MovingBraces';
+import Invisalign from './components/Invisalign';
 import AgeGroups from './components/routes/AgeGroups';
 import OralHygiene from './components/routes/OralHygiene';
 import Advice from './components/routes/Advice';
@@ -41,7 +46,13 @@ const App = () => {
           <Route path="doctor" element={<Doctor />} />
           <Route path="clinics" element={<Clinics />} />
           <Route path="ageGroups" element={<AgeGroups />} />
-          <Route path="treatments" element={<Treatments />} />
+          <Route path="treatments" element={<Treatments />}>
+            <Route path="invisibleBraces" element={<InvisibleBraces />} />
+            <Route path="tongueBraces" element={<TongueBraces />} />
+            <Route path="movingBraces" element={<MovingBraces />} />
+            <Route path="metalBraces" element={<MetalBraces />} />
+            <Route path="invisalign" element={<Invisalign />} />
+          </Route>
           <Route path="oralHygiene" element={<OralHygiene />} />
           <Route path="advice" element={<Advice />} />
           <Route path="firstAid" element={<FirstAid />} />

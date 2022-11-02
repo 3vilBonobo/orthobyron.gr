@@ -8,16 +8,17 @@ const ReviewsCarousel = () => {
   return (
     <StyledReviewsCarouselWrapper>
       <Carousel
-        autoPlay
         stopOnHover
         infiniteLoop
         showIndicators={false}
         showArrows
+        transitionTime={1500}
+        showThumbs={false}
       >
         {reviews.map((review, index) => {
           return (
-            <div>
-              <p>{reviews[index].review}</p>
+            <div key={index}>
+              <p>{review.review}</p>
 
               <div>
                 <BsStarFill />
@@ -27,7 +28,7 @@ const ReviewsCarousel = () => {
                 <BsStarFill />
               </div>
               <div>
-                <p>Πηγή: {reviews[index].source}</p>
+                <p>Πηγή: {review.source}</p>
               </div>
             </div>
           );
