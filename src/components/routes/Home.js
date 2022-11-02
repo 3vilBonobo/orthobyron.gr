@@ -1,5 +1,6 @@
 import Salon1 from '../../assets/salon1.jpg';
-import { intro, reviews } from '../../data/data';
+import Treatment from '../Treatment';
+import { intro, reviews, treatments } from '../../data/data';
 import { BsStarFill } from 'react-icons/bs';
 import {
   StyledHero,
@@ -8,6 +9,7 @@ import {
   StyledHeroBtn,
   StyledIntroSection,
   StyledReviewsSection,
+  StyledTreatmentsSection,
 } from '../styles/Home.styles';
 
 const Home = () => {
@@ -34,6 +36,11 @@ const Home = () => {
           <p>Πηγή: {reviews[0].source}</p>
         </div>
       </StyledReviewsSection>
+      <StyledTreatmentsSection>
+        {treatments.map((item, index) => {
+          return <Treatment key={index} treatments={item} />;
+        })}
+      </StyledTreatmentsSection>
     </>
   );
 };

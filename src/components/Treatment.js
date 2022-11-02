@@ -1,15 +1,14 @@
-import { treatments } from '../data/data';
 import {
   StyledTreatmentContainer,
   StyledTreatmentImage,
   StyledTreatmentTitle,
 } from './styles/Treatment.style';
 
-const Treatment = () => {
+const Treatment = ({ treatments }) => {
   return (
     <StyledTreatmentContainer>
-      <StyledTreatmentTitle></StyledTreatmentTitle>
-      <StyledTreatmentImage src={require()} />
+      <StyledTreatmentTitle>{treatments.name}</StyledTreatmentTitle>
+      <StyledTreatmentImage src="../assets/metallika-siderakia.jpg" />
     </StyledTreatmentContainer>
   );
 };
