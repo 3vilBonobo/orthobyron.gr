@@ -21,7 +21,7 @@ const Attribution = () => {
         <StyledAttrLinks href="https://www.eexi.gr/" target="”_blank”">
           eexi.gr
         </StyledAttrLinks>
-        , <br /> coded by{' '}
+        , <br /> designed and coded by{' '}
         <StyledAttrLinks href="https://github.com/3vilBonobo" target="”_blank”">
           {' '}
           Irinella Boutsika

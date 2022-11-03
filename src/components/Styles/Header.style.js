@@ -23,11 +23,12 @@ export const StyledMidHeader = styled.div`
   justify-content: space-around;
 `;
 
-export const StyledPhone = styled.p`
+export const StyledPhone = styled.a`
   width: 350px;
   text-align: center;
   display: inline-block;
   font-weight: 600;
+  text-decoration: none;
   padding: 1rem;
   color: #3579a0;
 `;

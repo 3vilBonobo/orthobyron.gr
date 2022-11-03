@@ -17,7 +17,7 @@ export const StyledHeroTitle = styled.h1`
     -4px -3px 7px rgba(30, 3, 33, 0.99);
 `;
 
-export const StyledHeroBtn = styled(Link)`
+export const StyledHeroBtn = styled.a`
   position: absolute;
   font-size: 2rem;
   background-color: rgba(30, 3, 33, 0.2);

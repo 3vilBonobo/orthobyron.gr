@@ -20,7 +20,7 @@ const Header = () => {
         <StyledBannerTop src={BannerTop} alt="EFKA Banner" />
       </a>
       <StyledMidHeader>
-        <StyledPhone>210 7659556</StyledPhone>
+        <StyledPhone href="tel:2107659556">210 7659556</StyledPhone>
         <StyledCTA to="contact">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</StyledCTA>
       </StyledMidHeader>
       <Link to="/">

@@ -13,23 +13,38 @@ export const StyledTreatmentContainer = styled.div`
     max-width: 80%;
   }
 `;
+
+export const StyledTreatmentImage = styled.img`
+  width: 100%;
+  height: fit-content;
+  opacity: 0.8;
+  transition: transform 0.5s;
+`;
 export const StyledTreatmentBox = styled(Link)`
-  display: block;
-  background-color: darkblue;
+  display: inline-block;
   position: relative;
-  width: 300px;
+  width: 360px;
+  height: 240px;
   text-align: center;
   margin: 1rem;
+  text-decoration: none;
+  overflow: hidden;
+  &:hover ${StyledTreatmentImage} {
+    opacity: 0.4;
+    transform: scale(1.2);
+  }
   @media screen and (min-width: 768px) {
+    width: 300px;
+    height: 200px;
     margin: 1.5rem;
   }
 `;
-export const StyledTreatmentImage = styled.img`
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-`;
 
+export const StyledOverlay = styled.img`
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+`;
 export const StyledTreatmentTitle = styled.h2`
   text-transform: uppercase;
   color: white;

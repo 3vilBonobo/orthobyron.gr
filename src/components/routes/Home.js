@@ -22,7 +22,7 @@ const Home = () => {
     <>
       <StyledHero>
         <StyledHeroTitle>ΟΡΘΟΔΟΝΤΙΚΑ ΙΑΤΡΕΙΑ</StyledHeroTitle>
-        <StyledHeroBtn to="contact">210 7659556</StyledHeroBtn>
+        <StyledHeroBtn href="tel:2107659556">210 7659556</StyledHeroBtn>
         <StyledHeroImg src={Salon1} alt="" />
       </StyledHero>
 
