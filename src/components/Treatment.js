@@ -11,7 +11,7 @@ const Treatment = () => {
     <StyledTreatmentContainer>
       {treatments.map((item, index) => {
         return (
-          <StyledTreatmentBox key={index}>
+          <StyledTreatmentBox key={index} to={item.url}>
             <StyledTreatmentTitle>{item.name}</StyledTreatmentTitle>
             <StyledTreatmentImage src={item.image} />
           </StyledTreatmentBox>

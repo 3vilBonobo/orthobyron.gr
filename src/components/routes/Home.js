@@ -1,7 +1,9 @@
 import Salon1 from '../../assets/salon1.jpg';
 import Treatment from '../Treatment';
-import { intro } from '../../data/data';
+import { intro, addresses } from '../../data/data';
 import ReviewsCarousel from '../ReviewsCarousel';
+import WorkHours from '../WorkHours';
+import Map from '../Map';
 import {
   StyledHero,
   StyledHeroTitle,
@@ -10,6 +12,9 @@ import {
   StyledIntroSection,
   StyledReviewsSection,
   StyledTreatmentsSection,
+  StyledWorkHoursSection,
+  StyledMapSection,
+  StyledMapWrapper,
 } from '../styles/Home.styles';
 
 const Home = () => {
@@ -30,6 +35,18 @@ const Home = () => {
       <StyledTreatmentsSection>
         <Treatment />
       </StyledTreatmentsSection>
+      <StyledWorkHoursSection>
+        <WorkHours />
+      </StyledWorkHoursSection>
+
+      <StyledMapSection>
+        <h2>ΔΙΕΥΘΥΝΣΗ</h2>
+        <StyledMapWrapper>
+          {addresses.map((item, index) => {
+            return <Map addresses={item} key={index} />;
+          })}
+        </StyledMapWrapper>
+      </StyledMapSection>
     </>
   );
 };

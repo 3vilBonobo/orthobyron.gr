@@ -65,10 +65,42 @@ export const StyledTreatmentsSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+  }
+`;
+export const StyledWorkHoursSection = styled.section`
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const StyledMapSection = styled.section`
+  background-color: #e4e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+export const StyledMapWrapper = styled.section`
+  background-color: #e4e8f0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
 `;

@@ -6,9 +6,11 @@ export const StyledTreatmentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    max-width: 80%;
   }
 `;
 export const StyledTreatmentBox = styled(Link)`
@@ -17,6 +19,10 @@ export const StyledTreatmentBox = styled(Link)`
   position: relative;
   width: 300px;
   text-align: center;
+  margin: 1rem;
+  @media screen and (min-width: 768px) {
+    margin: 1.5rem;
+  }
 `;
 export const StyledTreatmentImage = styled.img`
   width: 100%;
