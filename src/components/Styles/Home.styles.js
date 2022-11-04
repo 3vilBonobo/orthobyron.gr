@@ -72,6 +72,20 @@ export const StyledTreatmentsSection = styled.section`
     justify-content: center;
   }
 `;
+export const StyledInfoText = styled.p`
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3579a0;
+`;
+export const StyledCTASection = styled.section`
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const StyledWorkHoursSection = styled.section`
   background-color: #fff;
   display: flex;

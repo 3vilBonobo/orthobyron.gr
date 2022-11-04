@@ -17,7 +17,7 @@ export const StyledTreatmentContainer = styled.div`
 export const StyledTreatmentImage = styled.img`
   width: 100%;
   height: fit-content;
-  opacity: 0.8;
+  opacity: 0.4;
   transition: transform 0.5s;
 `;
 export const StyledTreatmentBox = styled(Link)`
@@ -30,7 +30,7 @@ export const StyledTreatmentBox = styled(Link)`
   text-decoration: none;
   overflow: hidden;
   &:hover ${StyledTreatmentImage} {
-    opacity: 0.4;
+    opacity: 0.8;
     transform: scale(1.2);
   }
   @media screen and (min-width: 768px) {
