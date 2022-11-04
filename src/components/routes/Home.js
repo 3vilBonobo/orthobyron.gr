@@ -1,6 +1,6 @@
 import Salon1 from '../../assets/salon1.jpg';
 import Treatment from '../Treatment';
-import { intro, addresses, clinicsImages } from '../../data/data';
+import { contact, intro, addresses, clinicsImages } from '../../data/data';
 import ReviewsCarousel from '../ReviewsCarousel';
 import CTAButton from '../CTAButton';
 import { StyledAppointmentBtn } from '../styles/CTAButton.styles';
@@ -24,15 +24,17 @@ import {
   StyledMapSection,
   StyledMapWrapper,
   StyledPersonnelSection,
+  StyledSocialsSection,
 } from '../styles/Home.styles';
 import PersonHome from '../PersonHome';
+import SocialMediaHome from '../SocialMediaHome';
 
 const Home = () => {
   return (
     <>
       <StyledHero>
         <StyledHeroTitle>ΟΡΘΟΔΟΝΤΙΚΑ ΙΑΤΡΕΙΑ</StyledHeroTitle>
-        <StyledHeroBtn href="tel:2107659556">210 7659556</StyledHeroBtn>
+        <StyledHeroBtn href={`tel:${contact.phone}`}>210 7659556</StyledHeroBtn>
         <StyledHeroImg src={Salon1} alt="" />
       </StyledHero>
 
@@ -65,6 +67,10 @@ const Home = () => {
       <StyledPersonnelSection>
         <PersonHome />
       </StyledPersonnelSection>
+      <StyledSocialsSection>
+        <SocialMediaHome />
+      </StyledSocialsSection>
+
       <StyledWorkHoursSection>
         <WorkHours />
       </StyledWorkHoursSection>
