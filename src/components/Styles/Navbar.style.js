@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
 import { MdClose } from 'react-icons/md';
+import { AiFillCaretDown } from 'react-icons/ai';
 
 export const StyledBurgerIcon = styled(BiMenu)`
   position: absolute;
@@ -62,6 +63,11 @@ export const StyledMenuItems = styled.ul`
     justify-content: flex-end;
     align-items: baseline;
   }
+`;
+export const StyledMenuArrow = styled(AiFillCaretDown)`
+  margin-left: 1rem;
+  font-size: 0.97rem;
+  padding-top: 0.1rem;
 `;
 
 export const StyledMenuLink = styled(Link)`
