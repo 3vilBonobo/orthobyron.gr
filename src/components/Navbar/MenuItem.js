@@ -1,4 +1,5 @@
 import { StyledMenuLink, StyledNavButton } from '../styles/Navbar.style';
+import { AiFillCaretDown } from 'react-icons/ai';
 import Submenu from './Submenu';
 import { useState, useEffect, useRef } from 'react';
 
@@ -34,6 +35,7 @@ const MenuItem = ({ items, showSidebar }) => {
           <ul>
             <StyledNavButton ref={btnRef} type="button" onClick={showSubmenu}>
               {items.title}
+              <AiFillCaretDown />
             </StyledNavButton>
             <Submenu
               submenu={submenu}

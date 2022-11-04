@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const StyledHero = styled.div`
   position: relative;
@@ -85,7 +84,34 @@ export const StyledCTASection = styled.section`
   align-items: center;
   justify-content: center;
 `;
+export const StyledClinicsSection = styled.section`
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
 
+export const StyledClinicsTitle = styled.h2`
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #cae3f0;
+  padding: 3rem;
+  color: #3579a0;
+  margin: 2rem 0;
+`;
+
+export const StyledClinicsCarousels = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
 export const StyledWorkHoursSection = styled.section`
   background-color: #fff;
   display: flex;

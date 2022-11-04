@@ -2,7 +2,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { reviews } from '../data/data';
 import { Carousel } from 'react-responsive-carousel';
 import { BsStarFill } from 'react-icons/bs';
-import { StyledReviewsCarouselWrapper } from './styles/ReviewCarousel.style';
+import { StyledReviewsCarouselWrapper } from './styles/Carousels.style';
 
 const ReviewsCarousel = () => {
   return (

@@ -1,9 +1,10 @@
 import Salon1 from '../../assets/salon1.jpg';
 import Treatment from '../Treatment';
-import { intro, addresses } from '../../data/data';
+import { intro, addresses, clinicsImages } from '../../data/data';
 import ReviewsCarousel from '../ReviewsCarousel';
 import CTAButton from '../CTAButton';
 import { StyledAppointmentBtn } from '../styles/CTAButton.styles';
+import ClinicsCarousel from '../ClinicsCarousel';
 import WorkHours from '../WorkHours';
 import Map from '../Map';
 import {
@@ -16,6 +17,9 @@ import {
   StyledTreatmentsSection,
   StyledInfoText,
   StyledCTASection,
+  StyledClinicsSection,
+  StyledClinicsTitle,
+  StyledClinicsCarousels,
   StyledWorkHoursSection,
   StyledMapSection,
   StyledMapWrapper,
@@ -48,7 +52,13 @@ const Home = () => {
           <CTAButton text={'ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ'} />
         </StyledAppointmentBtn>
       </StyledCTASection>
-
+      <StyledClinicsSection>
+        <StyledClinicsTitle>ΤΑ ΙΑΤΡΕΙΑ ΜΑΣ</StyledClinicsTitle>
+        <StyledClinicsCarousels>
+          <ClinicsCarousel clinic={clinicsImages.byron} />
+          <ClinicsCarousel clinic={clinicsImages.piraeus} />
+        </StyledClinicsCarousels>
+      </StyledClinicsSection>
       <StyledWorkHoursSection>
         <WorkHours />
       </StyledWorkHoursSection>

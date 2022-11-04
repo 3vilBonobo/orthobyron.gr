@@ -4,7 +4,7 @@ export const menuItemsData = [
     url: '/',
   },
   {
-    title: 'Γνωρίστε μας',
+    title: `Γνωρίστε μας `,
     url: '/services',
     submenu: [
       {
@@ -96,6 +96,30 @@ export const reviews = [
     source: 'Facebook',
   },
 ];
+
+export const clinicsImages = {
+  byron: {
+    title: 'ΙΑΤΡΕΙΟ ΒΥΡΩΝΑ',
+    images: [
+      'images/iatreio_byrona_01.jpg',
+      'images/iatreio_byrona_02.jpg',
+      'images/iatreio_byrona_03.jpg',
+      'images/iatreio_byrona_04.jpg',
+      'images/iatreio_byrona_05.jpg',
+    ],
+  },
+
+  piraeus: {
+    title: 'ΙΑΤΡΕΙΟ ΠΕΙΡΑΙΑ',
+    images: [
+      'images/iatreio_peiraias_01.jpg',
+      'images/iatreio_peiraias_02.jpg',
+      'images/iatreio_peiraias_03.jpg',
+      'images/iatreio_peiraias_04.jpg',
+      'images/iatreio_peiraias_05.jpg',
+    ],
+  },
+};
 
 export const iatreia = {
   general:
