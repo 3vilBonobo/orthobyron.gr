@@ -144,3 +144,17 @@ export const StyledMapWrapper = styled.section`
     justify-content: space-around;
   }
 `;
+
+export const StyledPersonnelSection = styled.section`
+  background-color: #e4e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const StyledSocialsSection = styled.section`
+  width: 100%;
+  background-color: #3579a0;
+`;

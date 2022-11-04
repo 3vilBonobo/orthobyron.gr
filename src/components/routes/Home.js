@@ -23,7 +23,9 @@ import {
   StyledWorkHoursSection,
   StyledMapSection,
   StyledMapWrapper,
+  StyledPersonnelSection,
 } from '../styles/Home.styles';
+import PersonHome from '../PersonHome';
 
 const Home = () => {
   return (
@@ -59,6 +61,10 @@ const Home = () => {
           <ClinicsCarousel clinic={clinicsImages.piraeus} />
         </StyledClinicsCarousels>
       </StyledClinicsSection>
+
+      <StyledPersonnelSection>
+        <PersonHome />
+      </StyledPersonnelSection>
       <StyledWorkHoursSection>
         <WorkHours />
       </StyledWorkHoursSection>
