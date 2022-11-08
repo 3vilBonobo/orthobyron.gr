@@ -27,6 +27,7 @@ export const StyledAgeGroupContainer = styled.div`
 export const StyledAgeGroupImage = styled.img`
   max-width: 400px;
   padding: 1rem;
+  border-radius: 50%;
 `;
 export const StyledAgeGroupInfo = styled.div`
   padding-inline: 2rem;
