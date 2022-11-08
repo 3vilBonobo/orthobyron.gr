@@ -8,6 +8,7 @@ export const StyledClinicsMainSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 100%;
   @media screen and (min-width: 768px) {
     padding-inline: 10rem;
   }
