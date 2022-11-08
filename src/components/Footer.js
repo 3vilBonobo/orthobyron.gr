@@ -1,13 +1,13 @@
-import { StyledFooter } from './styles/Footer.style';
+import { StyledFooter, StyledFooterHours } from './styles/Footer.style';
 import WorkHours from '../components/WorkHours';
 import Attribution from './Attribution';
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <div>
+      <StyledFooterHours>
         <WorkHours />
-      </div>
+      </StyledFooterHours>
       <Attribution />
     </StyledFooter>
   );

@@ -5,6 +5,11 @@ export const StyledFooter = styled.footer`
   background-color: rgba(30, 52, 94);
 `;
 
+export const StyledFooterHours = styled.div`
+  background-color: transparent;
+  color: #fff;
+`;
+
 export const StyledAttribution = styled.div`
   font-weight: 500;
   display: flex;

@@ -7,9 +7,13 @@ export const StyledNotFound = styled.div`
   justify-content: center;
   text-align: center;
   background-color: #fff;
+  background-image: url('images/tooth_bg.svg');
+  background-size: cover;
+  background-position: center;
   padding: 3rem;
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    width: 100%;
   }
 `;
 

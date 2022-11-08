@@ -1,7 +1,17 @@
 import { StyledSubmenu, StyledSubmenuLink } from '../styles/Navbar.style';
-const Submenu = ({ submenus, submenu, showSidebar }) => {
+const Submenu = ({
+  submenus,
+  submenu,
+  showSidebar,
+  showSubmenu,
+  hideSubmenu,
+}) => {
   return (
-    <StyledSubmenu submenu={submenu}>
+    <StyledSubmenu
+      submenu={submenu}
+      onMouseEnter={() => showSubmenu()}
+      onMouseLeave={() => hideSubmenu()}
+    >
       {submenus.map((submenu, index) => (
         <li key={index} className="menu-items">
           <StyledSubmenuLink to={submenu.url} onClick={() => showSidebar()}>

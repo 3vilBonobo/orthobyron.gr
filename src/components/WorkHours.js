@@ -11,22 +11,25 @@ import {
 
 export const WorkHours = () => {
   return (
-    <StyledWorkHoursWrapper>
-      <StyledDaysContainer>
-        <StyledDays>
-          {workHours.map((item, index) => {
-            return <StyledDay key={index}>{item.day}</StyledDay>;
-          })}
-        </StyledDays>
-      </StyledDaysContainer>
-      <StyledHoursContainer>
-        <StyledHours>
-          {workHours.map((item, index) => {
-            return <StyledDay key={index}>{item.hour}</StyledDay>;
-          })}
-        </StyledHours>
-      </StyledHoursContainer>
-    </StyledWorkHoursWrapper>
+    <>
+      <h3>ΩΡΑΡΙΟ</h3>
+      <StyledWorkHoursWrapper>
+        <StyledDaysContainer>
+          <StyledDays>
+            {workHours.map((item, index) => {
+              return <StyledDay key={index}>{item.day}</StyledDay>;
+            })}
+          </StyledDays>
+        </StyledDaysContainer>
+        <StyledHoursContainer>
+          <StyledHours>
+            {workHours.map((item, index) => {
+              return <StyledDay key={index}>{item.hour}</StyledDay>;
+            })}
+          </StyledHours>
+        </StyledHoursContainer>
+      </StyledWorkHoursWrapper>
+    </>
   );
 };
 

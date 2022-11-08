@@ -9,9 +9,18 @@ import { useState, useEffect, useRef } from 'react';
 
 const MenuItem = ({ items, showSidebar }) => {
   const [submenu, setSubmenu] = useState(false);
-  const showSubmenu = () => {
+  const toggleSubmenu = () => {
     setSubmenu(!submenu);
   };
+
+  const hideSubmenu = () => {
+    setSubmenu(false);
+  };
+
+  const showSubmenu = () => {
+    setSubmenu(true);
+  };
+
   const btnRef = useRef();
 
   useEffect(() => {
@@ -37,7 +46,13 @@ const MenuItem = ({ items, showSidebar }) => {
       {items.submenu ? (
         <li>
           <ul>
-            <StyledNavButton ref={btnRef} type="button" onClick={showSubmenu}>
+            <StyledNavButton
+              ref={btnRef}
+              type="button"
+              onClick={toggleSubmenu}
+              onMouseEnter={showSubmenu}
+              onMouseLeave={hideSubmenu}
+            >
               {items.title}
               <StyledMenuArrow />
             </StyledNavButton>
@@ -45,6 +60,8 @@ const MenuItem = ({ items, showSidebar }) => {
               submenu={submenu}
               showSidebar={showSidebar}
               submenus={items.submenu}
+              showSubmenu={showSubmenu}
+              hideSubmenu={hideSubmenu}
             />
           </ul>
         </li>

@@ -60,11 +60,15 @@ export const StyledReviewsSection = styled.section`
 
 export const StyledTreatmentsSection = styled.section`
   background-color: #fff;
+  background-image: url('images/tooth_bg.svg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 6rem 0;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;

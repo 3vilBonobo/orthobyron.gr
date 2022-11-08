@@ -7,6 +7,7 @@ export const StyledTreatmentContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #fff;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
