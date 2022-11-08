@@ -1,10 +1,16 @@
+import { StyledAgeGroupsMainSection } from '../styles/AgeGroups.style';
 import { ageGroups } from '../../data/data';
+import AgeGroup from '../AgeGroup';
 
 const AgeGroups = () => {
   return (
-    <div>
+    <StyledAgeGroupsMainSection>
       <h1>Ηλικιακές Ομάδες</h1>
-    </div>
+
+      {ageGroups.map((item, index) => {
+        return <AgeGroup key={index} ageGroup={item} />;
+      })}
+    </StyledAgeGroupsMainSection>
   );
 };
 

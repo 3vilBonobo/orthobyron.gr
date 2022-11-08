@@ -22,3 +22,28 @@ export const StyledClinicsTitle = styled.h1`
 export const StyledClinicsText = styled.div`
   padding: 0 2rem 2rem 2rem;
 `;
+
+export const StyledClinicsInfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+`;
+
+export const StyledClinicsInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 500px;
+  padding-inline: 1rem;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+`;

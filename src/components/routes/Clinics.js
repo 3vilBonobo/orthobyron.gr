@@ -5,6 +5,8 @@ import {
   StyledClinicsMainSection,
   StyledClinicsTitle,
   StyledClinicsText,
+  StyledClinicsInfoWrapper,
+  StyledClinicsInfo,
 } from '../styles/Clinics.style';
 
 const Clinics = () => {
@@ -16,6 +18,18 @@ const Clinics = () => {
           __html: iatreia.general,
         }}
       ></StyledClinicsText>
+      <StyledClinicsInfoWrapper>
+        <StyledClinicsInfo
+          dangerouslySetInnerHTML={{
+            __html: iatreia.byron.info,
+          }}
+        ></StyledClinicsInfo>
+        <StyledClinicsInfo
+          dangerouslySetInnerHTML={{
+            __html: iatreia.piraeus.info,
+          }}
+        ></StyledClinicsInfo>
+      </StyledClinicsInfoWrapper>
       <StyledClinicsCarousels>
         <ClinicsCarousel clinic={clinicsImages.byron} />
         <ClinicsCarousel clinic={clinicsImages.piraeus} />
