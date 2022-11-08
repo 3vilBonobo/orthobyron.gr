@@ -30,7 +30,7 @@ export const StyledOralHygieneWrapper = styled.div`
 export const StyledOralHygieneInfoTop = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
