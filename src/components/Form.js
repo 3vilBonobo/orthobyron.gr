@@ -1,7 +1,16 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-
 import * as yup from 'yup';
+
+import {
+  StyledFormContainer,
+  StyledFormTitle,
+  StyledForm,
+  StyledFormInput,
+  StyledFormSelect,
+  StyledFormOption,
+  StyledFormBtn,
+} from './styles/Form.style';
 
 const schema = yup.object().shape({
   name: yup.string().required(),
@@ -20,43 +29,44 @@ const Form = () => {
     console.log(data);
   };
   return (
-    <>
-      <form onSubmit={handleSubmit(submitForm)}>
-        <input
+    <StyledFormContainer>
+      <StyledFormTitle>Επικοινωνήστε μαζί μας!</StyledFormTitle>
+      <StyledForm onSubmit={handleSubmit(submitForm)}>
+        <StyledFormInput
           type="text"
           name="name"
           placeholder="Ονοματεπώνυμο"
           {...register('name', { required: true })}
         />
         <p>{errors.name?.message}</p>
-        <input
+        <StyledFormInput
           type="text"
           name="email"
           placeholder="E-mail"
           {...register('email', { required: true })}
         />
         <p>{errors.email?.message}</p>
-        <input
+        <StyledFormInput
           type="text"
           name="phone"
           placeholder="Τηλέφωνο"
           {...register('phone', { required: true })}
         />
         <p>{errors.phone?.message}</p>
-        <select>
-          <option name="visit" value="visit">
+        <StyledFormSelect>
+          <StyledFormOption name="visit" value="visit">
             Α' Επίσκεψη / Ενημέρωση
-          </option>
-          <option name="braces" value="braces">
+          </StyledFormOption>
+          <StyledFormOption name="braces" value="braces">
             Αόρατοι Νάρθηκες
-          </option>
-          <option name="revisit" value="revisit">
+          </StyledFormOption>
+          <StyledFormOption name="revisit" value="revisit">
             Επανεξέταση
-          </option>
-        </select>
-        <button type="submit">ΣΤΕΙΛΤΕ ΤΟ ΜΗΝΥΜΑ ΣΑΣ</button>
-      </form>
-    </>
+          </StyledFormOption>
+        </StyledFormSelect>
+        <StyledFormBtn type="submit">ΣΤΕΙΛΤΕ ΤΟ ΜΗΝΥΜΑ ΣΑΣ</StyledFormBtn>
+      </StyledForm>
+    </StyledFormContainer>
   );
 };
 
