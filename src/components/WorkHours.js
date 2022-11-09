@@ -6,7 +6,6 @@ import {
   StyledDays,
   StyledHours,
   StyledDay,
-  StyledHour,
 } from './styles/WorkHours.style';
 
 export const WorkHours = () => {

@@ -1,19 +1,29 @@
 import { patients } from '../../data/data';
+import {
+  StyledAdviceMainSection,
+  StyledAdviceTitle,
+  StyledAdviceWrapper,
+  StyledAdviceInfo,
+  StyledAdviceImage,
+} from '../styles/Advice.style';
 
 const Advice = () => {
   return (
-    <div>
-      <h1
+    <StyledAdviceMainSection>
+      <StyledAdviceTitle
         dangerouslySetInnerHTML={{
           __html: patients.advice.title,
         }}
-      ></h1>
-      <p
-        dangerouslySetInnerHTML={{
-          __html: patients.advice.info,
-        }}
-      ></p>
-    </div>
+      ></StyledAdviceTitle>
+      <StyledAdviceWrapper>
+        <StyledAdviceInfo
+          dangerouslySetInnerHTML={{
+            __html: patients.advice.info,
+          }}
+        ></StyledAdviceInfo>
+        <StyledAdviceImage src={patients.advice.image} />
+      </StyledAdviceWrapper>
+    </StyledAdviceMainSection>
   );
 };
 
