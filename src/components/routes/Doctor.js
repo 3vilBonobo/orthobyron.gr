@@ -1,11 +1,28 @@
 import { personnel } from '../../data/data';
+import {
+  StyledDoctorMainSection,
+  StyledDoctorTitle,
+  StyledDoctorContainer,
+  StyledDoctorTopSection,
+  StyledDoctorBottomSection,
+  StyledDoctorText,
+  StyledDoctorName,
+  StyledDoctorImage,
+} from '../styles/Doctor.style';
 const Doctor = () => {
   return (
-    <div>
-      <h1>Doctor</h1>
-      <h2>{personnel.person1.name}</h2>
-      <p>{personnel.person1.info}</p>
-    </div>
+    <StyledDoctorMainSection>
+      <StyledDoctorTitle>Ο Ιατρός</StyledDoctorTitle>
+      <StyledDoctorContainer></StyledDoctorContainer>
+      <StyledDoctorName>{personnel.person1.name}</StyledDoctorName>
+      <StyledDoctorTopSection>
+        <StyledDoctorText>{personnel.person1.info1}</StyledDoctorText>
+        <StyledDoctorImage src={personnel.person1.image2} />
+      </StyledDoctorTopSection>
+      <StyledDoctorBottomSection>
+        <StyledDoctorText>{personnel.person1.info2}</StyledDoctorText>
+      </StyledDoctorBottomSection>
+    </StyledDoctorMainSection>
   );
 };
 
