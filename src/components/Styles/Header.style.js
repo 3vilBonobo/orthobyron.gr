@@ -16,7 +16,9 @@ export const StyledHeader = styled.header`
 export const StyledBanner = styled.div`
   width: 100vw;
   @media screen and (min-width: 768px) {
-    width: 40%;
+    width: 50%;
+    min-width: 400px;
+    align-self: flex-start;
   }
 `;
 
@@ -28,23 +30,38 @@ export const StyledBannerTop = styled.img`
   width: 100%;
 `;
 
-export const StyledMidHeader = styled.div`
-  position: relative;
-  display: grid;
-  grid-template-areas:
-    'phone phone cta cta'
-    'logo logo logo navbar';
+export const StyledTopHeaderSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
-  color: #fff;
+
   @media screen and (min-width: 768px) {
-    grid-template-areas:
-      'logo logo logo phone'
-      'logo navbar navbar cta';
+    flex-direction: row;
+    justify-content: center;
   }
 `;
 
+export const StyledContactHeaderSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+`;
+
+export const StyledBottomHeaderSection = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #fff;
+`;
+
 export const StyledPhone = styled.a`
-  grid-area: phone;
   width: 350px;
   text-align: center;
   display: inline-block;
@@ -52,33 +69,59 @@ export const StyledPhone = styled.a`
   text-decoration: none;
   padding: 1rem;
   color: #3579a0;
+  @media screen and (min-width: 768px) {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
 `;
+
+export const StyledEmail = styled.a`
+  width: 350px;
+  text-align: center;
+  display: none;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem;
+  color: #3579a0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+`;
+
 export const StyledCTA = styled(Link)`
-  grid-area: cta;
   text-decoration: none;
   display: inline-block;
   text-align: center;
+  justify-content: center;
   width: 100%;
   font-weight: 600;
-  padding: 1rem;
+  padding: 1.2rem 1.2rem 2.4rem 1.2rem;
   background-color: #3579a0;
   color: #fff;
+  &:hover {
+    background-color: #3399ff;
+  }
   @media screen and (min-width: 768px) {
     height: 3rem;
     align-self: center;
     width: 250px;
+    border-radius: 10px;
   }
 `;
 
 export const StyledLogo = styled.img`
-  grid-area: logo;
   width: 60%;
+  min-width: 250px;
   height: auto;
 
   @media screen and (min-width: 768px) {
-    position: absolute;
     top: 0;
-    width: 60%;
+    width: 100%;
     height: auto;
   }
 `;

@@ -9,8 +9,11 @@ import {
   StyledBanner,
   StyledBannerTop,
   StyledBannerLink,
-  StyledMidHeader,
+  StyledTopHeaderSection,
+  StyledContactHeaderSection,
+  StyledBottomHeaderSection,
   StyledPhone,
+  StyledEmail,
   StyledCTA,
   StyledLogo,
   StyledNavbarSection,
@@ -20,22 +23,31 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <StyledHeader>
-      <StyledBanner>
-        <StyledBannerLink href={BannerPdf} target="_blank" rel="noreferrer">
-          <StyledBannerTop src={BannerTop} alt="EFKA Banner" />
-        </StyledBannerLink>
-      </StyledBanner>
+      <StyledTopHeaderSection>
+        <StyledBanner>
+          <StyledBannerLink href={BannerPdf} target="_blank" rel="noreferrer">
+            <StyledBannerTop src={BannerTop} alt="EFKA Banner" />
+          </StyledBannerLink>
+        </StyledBanner>
 
-      <StyledMidHeader>
-        <StyledPhone href={`tel:${contact.phone}`}>{contact.phone}</StyledPhone>
-        <StyledCTA to="contact">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</StyledCTA>
+        <StyledContactHeaderSection>
+          <StyledPhone href={`tel:${contact.phone}`}>
+            {`Τηλ: ${contact.phone}`}
+          </StyledPhone>
+          <StyledEmail href={`mailto:${contact.mail}`}>
+            {`email: ${contact.mail}`}
+          </StyledEmail>
+          <StyledCTA to="contact">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</StyledCTA>
+        </StyledContactHeaderSection>
+      </StyledTopHeaderSection>
+      <StyledBottomHeaderSection>
         <Link to="/">
           <StyledLogo src={Logo} alt="logo" />
         </Link>
         <StyledNavbarSection>
           <Navbar />
         </StyledNavbarSection>
-      </StyledMidHeader>
+      </StyledBottomHeaderSection>
     </StyledHeader>
   );
 };

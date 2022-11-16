@@ -6,13 +6,13 @@ import { AiFillCaretDown } from 'react-icons/ai';
 
 export const StyledBurgerIcon = styled(BiMenu)`
   position: absolute;
-  color: #3579a0;
-  font-size: 3rem;
-  top: 8.3rem;
-  right: 3rem;
+  display: flex;
+  color: #2d6586;
+  font-size: 3.8rem;
+  top: 0.8rem;
+  right: 3.5rem;
   z-index: 8;
   cursor: pointer;
-
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -75,7 +75,7 @@ export const StyledMenuLink = styled(Link)`
   color: #fff;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   &:hover {
-    background-color: hsl(202, 38%, 37%);
+    background-color: #3579a0;
   }
   @media screen and (min-width: 768px) {
     margin-right: 2rem;
@@ -93,7 +93,7 @@ export const StyledNavButton = styled.button`
   padding: 0.5rem 1rem 0.5rem 0.5rem;
 
   &:hover {
-    background-color: hsl(202, 38%, 37%);
+    background-color: #3579a0;
   }
   @media screen and (min-width: 768px) {
     margin-right: 2rem;
@@ -120,7 +120,7 @@ export const StyledSubmenuLink = styled(Link)`
   background-color: #3579a0;
   color: #fff;
   &:hover {
-    background-color: hsl(202, 38%, 37%);
+    background-color: #3399ff;
   }
   @media screen and (min-width: 768px) {
     padding: 0.5rem 1rem 0.5rem 0.5rem;
