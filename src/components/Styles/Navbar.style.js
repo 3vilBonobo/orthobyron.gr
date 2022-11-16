@@ -45,6 +45,7 @@ export const StyledNavbarContainer = styled.nav`
   padding: 3rem 0 2rem 0.5rem;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
   transition: 0.5s;
+
   @media screen and (min-width: 768px) {
     position: relative;
     width: 100%;
@@ -72,13 +73,15 @@ export const StyledMenuArrow = styled(AiFillCaretDown)`
 
 export const StyledMenuLink = styled(Link)`
   text-decoration: none;
+  display: block;
   color: #fff;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  padding: 0.7rem 2rem;
+
   &:hover {
     background-color: #3579a0;
   }
   @media screen and (min-width: 768px) {
-    margin-right: 2rem;
+    border-radius: 10px;
   }
 `;
 
@@ -90,7 +93,7 @@ export const StyledNavButton = styled.button`
   background-color: inherit;
   border: none;
   cursor: pointer;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  padding: 0.78rem 1rem;
 
   &:hover {
     background-color: #3579a0;
@@ -98,6 +101,7 @@ export const StyledNavButton = styled.button`
   @media screen and (min-width: 768px) {
     margin-right: 2rem;
     text-align: center;
+    border-radius: 10px 10px 10px 0;
   }
 `;
 

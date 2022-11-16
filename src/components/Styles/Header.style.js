@@ -127,5 +127,8 @@ export const StyledLogo = styled.img`
 `;
 
 export const StyledNavbarSection = styled.div`
-  grid-area: navbar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
 `;
