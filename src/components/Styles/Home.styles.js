@@ -44,9 +44,18 @@ export const StyledHeroImg = styled.img`
 export const StyledIntroSection = styled.section`
   background-color: #3579a0;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+`;
+
+export const StyledIntroContainer = styled.div`
+  max-width: 60%;
   font-size: 1.5rem;
   font-style: italic;
   text-align: center;
+  line-height: 2.3rem;
 `;
 
 export const StyledReviewsSection = styled.section`

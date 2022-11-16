@@ -52,6 +52,7 @@ const MenuItem = ({ items, showSidebar }) => {
               onClick={toggleSubmenu}
               onMouseEnter={showSubmenu}
               onMouseLeave={hideSubmenu}
+              submenu={submenu}
             >
               {items.title}
               <StyledMenuArrow />

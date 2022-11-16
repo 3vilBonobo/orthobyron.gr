@@ -90,7 +90,7 @@ export const StyledNavButton = styled.button`
   color: #fff;
   width: 100%;
   text-align: left;
-  background-color: inherit;
+  background-color: ${({ submenu }) => (submenu ? '#3579a0' : 'inherit')};
   border: none;
   cursor: pointer;
   padding: 0.78rem 1rem;

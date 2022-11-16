@@ -13,6 +13,7 @@ import {
   StyledHeroImg,
   StyledHeroBtn,
   StyledIntroSection,
+  StyledIntroContainer,
   StyledReviewsSection,
   StyledTreatmentsSection,
   StyledInfoText,
@@ -38,7 +39,9 @@ const Home = () => {
         <StyledHeroImg src={Salon1} alt="" />
       </StyledHero>
 
-      <StyledIntroSection>{intro}</StyledIntroSection>
+      <StyledIntroSection>
+        <StyledIntroContainer>{intro}</StyledIntroContainer>
+      </StyledIntroSection>
 
       <StyledReviewsSection>
         <ReviewsCarousel />
