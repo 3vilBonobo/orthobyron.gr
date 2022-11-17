@@ -1,4 +1,8 @@
-import { StyledSubmenu, StyledSubmenuLink } from '../styles/Navbar.style';
+import {
+  StyledSubmenu,
+  StyledSubmenuItem,
+  StyledSubmenuLink,
+} from '../styles/Navbar.style';
 const Submenu = ({
   submenus,
   submenu,
@@ -15,11 +19,11 @@ const Submenu = ({
       onMouseLeave={() => hideSubmenu()}
     >
       {submenus.map((submenu, index) => (
-        <li key={index} className="menu-items">
+        <StyledSubmenuItem key={index} className="menu-items">
           <StyledSubmenuLink to={submenu.url} onClick={() => showSidebar()}>
             {submenu.title}
           </StyledSubmenuLink>
-        </li>
+        </StyledSubmenuItem>
       ))}
     </StyledSubmenu>
   );

@@ -118,19 +118,27 @@ export const StyledSubmenu = styled.ul`
     width: ${({ width }) => `${width}px`};
   }
 `;
-
-export const StyledSubmenuLink = styled(Link)`
+export const StyledSubmenuItem = styled.li`
   padding: 0.5rem 1rem 0.5rem 3rem;
   font-size: 1.12rem;
   display: block;
   width: 100%;
-  text-decoration: none;
   background-color: #3579a0;
   color: #fff;
   &:hover {
     background-color: #3399ff;
   }
+
   @media screen and (min-width: 768px) {
     padding: 0.5rem 1rem 0.5rem 0.5rem;
+
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+      padding-bottom: 1rem;
+    }
   }
+`;
+export const StyledSubmenuLink = styled(Link)`
+  text-decoration: none;
+  color: #fff;
 `;
