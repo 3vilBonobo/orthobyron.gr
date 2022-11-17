@@ -71,6 +71,10 @@ export const StyledMenuArrow = styled(AiFillCaretDown)`
   padding-top: 0.1rem;
 `;
 
+export const StyledLinkAndMenuContainer = styled.ul`
+  width: fit-content;
+`;
+
 export const StyledMenuLink = styled(Link)`
   text-decoration: none;
   display: block;
@@ -94,14 +98,13 @@ export const StyledNavButton = styled.button`
   border: none;
   cursor: pointer;
   padding: 0.78rem 1rem;
-
   &:hover {
     background-color: #3579a0;
   }
   @media screen and (min-width: 768px) {
     margin-right: 2rem;
     text-align: center;
-    border-radius: 10px 10px 10px 0;
+    border-radius: 10px 10px 0 0;
   }
 `;
 
@@ -109,9 +112,10 @@ export const StyledSubmenu = styled.ul`
   list-style: none;
   display: ${({ submenu }) => (submenu ? 'flex' : 'none')};
   flex-direction: column;
+
   @media screen and (min-width: 768px) {
     position: absolute;
-    min-width: 170px;
+    width: ${({ width }) => `${width}px`};
   }
 `;
 

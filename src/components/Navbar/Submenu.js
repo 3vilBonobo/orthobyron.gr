@@ -5,9 +5,11 @@ const Submenu = ({
   showSidebar,
   showSubmenu,
   hideSubmenu,
+  width,
 }) => {
   return (
     <StyledSubmenu
+      width={width}
       submenu={submenu}
       onMouseEnter={() => showSubmenu()}
       onMouseLeave={() => hideSubmenu()}

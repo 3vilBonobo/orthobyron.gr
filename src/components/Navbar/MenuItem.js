@@ -2,12 +2,21 @@ import {
   StyledMenuArrow,
   StyledMenuLink,
   StyledNavButton,
+  StyledLinkAndMenuContainer,
 } from '../styles/Navbar.style';
 
 import Submenu from './Submenu';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 
 const MenuItem = ({ items, showSidebar }) => {
+  const [width, setWidth] = useState(0);
+
+  const btnRef = useRef('');
+
+  useLayoutEffect(() => {
+    setWidth(btnRef.current.offsetWidth);
+  }, []);
+
   const [submenu, setSubmenu] = useState(false);
   const toggleSubmenu = () => {
     setSubmenu(!submenu);
@@ -20,8 +29,6 @@ const MenuItem = ({ items, showSidebar }) => {
   const showSubmenu = () => {
     setSubmenu(true);
   };
-
-  const btnRef = useRef();
 
   useEffect(() => {
     const closeSubmenu = (e) => {
@@ -45,7 +52,7 @@ const MenuItem = ({ items, showSidebar }) => {
     <>
       {items.submenu ? (
         <li>
-          <ul>
+          <StyledLinkAndMenuContainer>
             <StyledNavButton
               ref={btnRef}
               type="button"
@@ -58,13 +65,14 @@ const MenuItem = ({ items, showSidebar }) => {
               <StyledMenuArrow />
             </StyledNavButton>
             <Submenu
+              width={width}
               submenu={submenu}
               showSidebar={showSidebar}
               submenus={items.submenu}
               showSubmenu={showSubmenu}
               hideSubmenu={hideSubmenu}
             />
-          </ul>
+          </StyledLinkAndMenuContainer>
         </li>
       ) : (
         <StyledMenuLink to={items.url} onClick={() => showSidebar()}>
