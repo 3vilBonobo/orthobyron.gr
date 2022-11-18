@@ -10,6 +10,8 @@ export const StyledAdviceMainSection = styled.div`
   justify-content: flex-start;
   width: 100%;
   padding: 4rem;
+  position: relative;
+  top: 180px;
 `;
 export const StyledAdviceTitle = styled.h1`
   margin-bottom: 3rem;

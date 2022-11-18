@@ -9,6 +9,8 @@ export const StyledAgeGroupsMainSection = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  position: relative;
+  top: 180px;
   @media screen and (min-width: 768px) {
     padding: 3rem 10rem;
   }

@@ -8,6 +8,7 @@ import ClinicsCarousel from '../ClinicsCarousel';
 import WorkHours from '../WorkHours';
 import Map from '../Map';
 import {
+  StyledMain,
   StyledHero,
   StyledHeroTitle,
   StyledHeroImg,
@@ -33,7 +34,7 @@ import SocialMediaHome from '../SocialMediaHome';
 
 const Home = () => {
   return (
-    <>
+    <StyledMain>
       <StyledHero>
         <StyledHeroTitle>ΟΡΘΟΔΟΝΤΙΚΑ ΙΑΤΡΕΙΑ</StyledHeroTitle>
         <StyledHeroBtn href={`tel:${contact.phone}`}>210 7659556</StyledHeroBtn>
@@ -88,7 +89,7 @@ const Home = () => {
           })}
         </StyledMapWrapper>
       </StyledMapSection>
-    </>
+    </StyledMain>
   );
 };
 

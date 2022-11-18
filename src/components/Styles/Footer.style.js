@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledFooter = styled.footer`
   width: 100%;
   background-color: rgba(30, 52, 94);
+  position: relative;
+  top: 180px;
 `;
 
 export const StyledFooterHours = styled.div`

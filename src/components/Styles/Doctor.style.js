@@ -10,6 +10,8 @@ export const StyledDoctorMainSection = styled.div`
   justify-content: flex-start;
   width: 100%;
   padding: 1rem;
+  position: relative;
+  top: 180px;
 `;
 
 export const StyledDoctorContainer = styled.div`

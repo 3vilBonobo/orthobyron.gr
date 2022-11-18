@@ -11,6 +11,8 @@ export const StyledNotFound = styled.div`
   background-size: cover;
   background-position: center;
   padding: 3rem;
+  position: relative;
+  top: 180px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     width: 100%;

@@ -9,6 +9,8 @@ export const StyledClinicsMainSection = styled.section`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  position: relative;
+  top: 180px;
   @media screen and (min-width: 768px) {
     padding-inline: 10rem;
   }
