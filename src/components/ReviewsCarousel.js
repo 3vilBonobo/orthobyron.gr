@@ -2,11 +2,17 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { reviews } from '../data/data';
 import { Carousel } from 'react-responsive-carousel';
 import { BsStarFill } from 'react-icons/bs';
-import { StyledReviewsCarouselWrapper } from './styles/Carousels.style';
+import {
+  StyledReviewsCarouselWrapper,
+  StyledReviewsCarouselContainer,
+  StyledReviewsCarouselReview,
+  StyledReviewsCarouselName,
+  StyledReviewsCarouselSource,
+} from './styles/Carousels.style';
 
 const ReviewsCarousel = () => {
   return (
-    <StyledReviewsCarouselWrapper>
+    <StyledReviewsCarouselContainer>
       <Carousel
         stopOnHover
         infiniteLoop
@@ -17,8 +23,12 @@ const ReviewsCarousel = () => {
       >
         {reviews.map((review, index) => {
           return (
-            <div key={index}>
-              <p>{review.review}</p>
+            <StyledReviewsCarouselWrapper key={index}>
+              <StyledReviewsCarouselReview
+                dangerouslySetInnerHTML={{
+                  __html: review.review,
+                }}
+              ></StyledReviewsCarouselReview>
 
               <div>
                 <BsStarFill />
@@ -28,13 +38,18 @@ const ReviewsCarousel = () => {
                 <BsStarFill />
               </div>
               <div>
-                <p>Πηγή: {review.source}</p>
+                <StyledReviewsCarouselName>
+                  {review.name}
+                </StyledReviewsCarouselName>
+                <StyledReviewsCarouselSource>
+                  Πηγή: {review.source}
+                </StyledReviewsCarouselSource>
               </div>
-            </div>
+            </StyledReviewsCarouselWrapper>
           );
         })}
       </Carousel>
-    </StyledReviewsCarouselWrapper>
+    </StyledReviewsCarouselContainer>
   );
 };
 
