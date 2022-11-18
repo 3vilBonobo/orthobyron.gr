@@ -40,7 +40,7 @@ const App = () => {
   useEffect(() => {
     window.addEventListener('scroll', listenToScroll);
     return () => window.removeEventListener('scroll', listenToScroll);
-  }, []);
+  });
 
   return (
     <>

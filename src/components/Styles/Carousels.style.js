@@ -24,6 +24,7 @@ export const StyledReviewsCarouselReview = styled.p`
 `;
 export const StyledReviewsCarouselSource = styled.p`
   padding-bottom: 2rem;
+  margin-bottom: 2rem;
 `;
 export const StyledReviewsCarouselName = styled.p`
   font-size: 1.2rem;
