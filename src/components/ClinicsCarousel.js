@@ -49,10 +49,6 @@ const ClinicsCarousel = ({ clinic }) => {
             </div>
           );
         })}
-
-        <div>
-          <img className="image" src={clinic[0]} alt="" />
-        </div>
       </Carousel>
     </StyledClinicsCarouselWrapper>
   );
