@@ -73,6 +73,14 @@ export const StyledPhone = styled.a`
     color: #fff;
     font-size: 1.1rem;
     font-weight: 500;
+    transition: 0.5s background-color;
+    width: fit-content;
+    padding-inline: 2rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+    &:hover {
+      background-color: #3579a0;
+    }
   }
 `;
 
@@ -86,10 +94,18 @@ export const StyledEmail = styled.a`
   color: #3579a0;
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 500;
+    transition: 0.5s background-color;
+    border-radius: 10px;
+    padding-inline: 2rem;
+    &:hover {
+      background-color: #3579a0;
+    }
   }
 `;
 
@@ -103,6 +119,7 @@ export const StyledCTA = styled(Link)`
   padding: 1.2rem 1.2rem 2.4rem 1.2rem;
   background-color: #3579a0;
   color: #fff;
+  transition: 0.5s background-color;
   &:hover {
     background-color: #3399ff;
   }

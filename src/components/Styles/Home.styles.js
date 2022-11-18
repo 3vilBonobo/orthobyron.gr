@@ -21,7 +21,7 @@ export const StyledHeroBtn = styled.a`
   font-size: 2rem;
   background-color: rgba(30, 3, 33, 0.2);
   color: white;
-  padding: 2rem;
+  padding: 2rem 3rem;
   text-decoration: none;
   border: 3px solid white;
   border-radius: 10px;
@@ -30,7 +30,7 @@ export const StyledHeroBtn = styled.a`
   box-shadow: 2px 2px 6px rgba(30, 3, 33, 0.99),
     -4px -3px 5px rgba(30, 3, 33, 0.99);
   cursor: pointer;
-
+  transition: 0.5s background-color;
   &:hover {
     background-color: rgba(30, 3, 33, 0.4);
   }

@@ -33,6 +33,7 @@ export const StyledCloseIcon = styled(MdClose)`
 
 export const StyledNavbarContainer = styled.nav`
   z-index: 9;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -48,6 +49,7 @@ export const StyledNavbarContainer = styled.nav`
 
   @media screen and (min-width: 768px) {
     position: relative;
+    height: auto;
     width: 100%;
     left: 0;
     transition: 0s;
@@ -80,7 +82,7 @@ export const StyledMenuLink = styled(Link)`
   display: block;
   color: #fff;
   padding: 0.7rem 2rem;
-
+  transition: 0.3s background-color;
   &:hover {
     background-color: #3579a0;
   }
@@ -98,6 +100,7 @@ export const StyledNavButton = styled.button`
   border: none;
   cursor: pointer;
   padding: 0.78rem 1rem;
+  transition: 0.3s background-color;
   &:hover {
     background-color: #3579a0;
   }
@@ -124,13 +127,14 @@ export const StyledSubmenuItem = styled.li`
   display: block;
   width: 100%;
   background-color: #3579a0;
+  transition: 0.3s background-color;
   color: #fff;
   &:hover {
     background-color: #3399ff;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
 
     &:last-child {
       border-radius: 0 0 10px 10px;
@@ -141,4 +145,5 @@ export const StyledSubmenuItem = styled.li`
 export const StyledSubmenuLink = styled(Link)`
   text-decoration: none;
   color: #fff;
+  padding-left: 1rem;
 `;
