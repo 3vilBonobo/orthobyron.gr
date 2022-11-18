@@ -21,8 +21,47 @@ export const StyledHeroTitle = styled.h1`
 `;
 
 export const StyledHeroBtn = styled.a`
+  overflow: hidden;
   position: absolute;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: rgba(30, 3, 33, 0.2);
+  color: white;
+  padding: 2rem 3rem;
+  text-decoration: none;
+  border: 3px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(30, 3, 33, 0.99),
+    -4px -3px 5px rgba(30, 3, 33, 0.99);
+  box-shadow: 2px 2px 6px rgba(30, 3, 33, 0.99),
+    -4px -3px 5px rgba(30, 3, 33, 0.99);
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(30, 3, 33, 0.4);
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+
+  &:after {
+    background: #fff;
+    content: '';
+    height: 200px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
+  }
+
+  /* position: absolute;
+  font-size: 2.2rem;
+  font-weight: 500;
   background-color: rgba(30, 3, 33, 0.2);
   color: white;
   padding: 2rem 3rem;
@@ -37,7 +76,7 @@ export const StyledHeroBtn = styled.a`
   transition: 0.5s background-color;
   &:hover {
     background-color: rgba(30, 3, 33, 0.4);
-  }
+  } */
 `;
 
 export const StyledHeroImg = styled.img`
