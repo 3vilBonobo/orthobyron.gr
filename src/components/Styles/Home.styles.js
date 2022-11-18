@@ -88,6 +88,9 @@ export const StyledInfoText = styled.p`
   font-size: 1.2rem;
   font-weight: 500;
   color: #3579a0;
+  @media screen and (min-width: 768px) {
+    padding-block: 5rem;
+  }
 `;
 export const StyledCTASection = styled.section`
   width: 100%;
@@ -97,6 +100,7 @@ export const StyledCTASection = styled.section`
   align-items: center;
   justify-content: center;
 `;
+
 export const StyledClinicsSection = styled.section`
   background-color: #fff;
   display: flex;
