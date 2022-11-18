@@ -49,7 +49,7 @@ export const StyledHeroBtn = styled.a`
     background: #fff;
     content: '';
     height: 200px;
-    left: -75px;
+    left: -90px;
     opacity: 0.2;
     position: absolute;
     top: -50px;
