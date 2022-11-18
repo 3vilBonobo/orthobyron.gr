@@ -1,7 +1,5 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import DotLoader from 'react-spinners/DotLoader';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/routes/Home';
@@ -24,24 +22,30 @@ import NotFound from './components/routes/NotFound';
 import Footer from './components/Footer';
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const listenToScroll = () => {
+    let heightToHideFrom = 50;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && // to limit setting state only the first time
+        setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
 
   useEffect(() => {
-    setLoading(false);
+    window.addEventListener('scroll', listenToScroll);
+    return () => window.removeEventListener('scroll', listenToScroll);
   }, []);
 
   return (
     <>
-      <div className="sweet-loading">
-        <DotLoader
-          loading={loading}
-          size={150}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      </div>
       <BrowserRouter>
-        <Header />
+        <Header isVisible={isVisible} />
         <Routes>
           <Route path="doctor" element={<Doctor />} />
           <Route path="clinics" element={<Clinics />} />

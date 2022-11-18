@@ -20,26 +20,28 @@ import {
 } from './styles/Header.style';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ isVisible }) => {
   return (
     <StyledHeader>
-      <StyledTopHeaderSection>
-        <StyledBanner>
-          <StyledBannerLink href={BannerPdf} target="_blank" rel="noreferrer">
-            <StyledBannerTop src={BannerTop} alt="EFKA Banner" />
-          </StyledBannerLink>
-        </StyledBanner>
+      {isVisible && (
+        <StyledTopHeaderSection>
+          <StyledBanner>
+            <StyledBannerLink href={BannerPdf} target="_blank" rel="noreferrer">
+              <StyledBannerTop src={BannerTop} alt="EFKA Banner" />
+            </StyledBannerLink>
+          </StyledBanner>
 
-        <StyledContactHeaderSection>
-          <StyledPhone href={`tel:${contact.phone}`}>
-            {`Τηλ: ${contact.phone}`}
-          </StyledPhone>
-          <StyledEmail href={`mailto:${contact.mail}`}>
-            {`email: ${contact.mail}`}
-          </StyledEmail>
-          <StyledCTA to="contact">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</StyledCTA>
-        </StyledContactHeaderSection>
-      </StyledTopHeaderSection>
+          <StyledContactHeaderSection>
+            <StyledPhone href={`tel:${contact.phone}`}>
+              {`Τηλ: ${contact.phone}`}
+            </StyledPhone>
+            <StyledEmail href={`mailto:${contact.mail}`}>
+              {`email: ${contact.mail}`}
+            </StyledEmail>
+            <StyledCTA to="contact">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</StyledCTA>
+          </StyledContactHeaderSection>
+        </StyledTopHeaderSection>
+      )}
       <StyledBottomHeaderSection>
         <Link to="/">
           <StyledLogo src={Logo} alt="logo" />

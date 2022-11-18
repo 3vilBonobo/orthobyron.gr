@@ -18,8 +18,10 @@ const ReviewsCarousel = () => {
         infiniteLoop
         showIndicators={false}
         showArrows
+        showStatus={false}
         transitionTime={1500}
         showThumbs={false}
+        swipeable={true}
       >
         {reviews.map((review, index) => {
           return (

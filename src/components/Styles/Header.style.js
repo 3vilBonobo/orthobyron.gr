@@ -8,11 +8,14 @@ export const StyledHeader = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  position: fixed;
+  z-index: 10;
+  top: 0;
   @media screen and (min-width: 768px) {
     background-color: rgba(30, 52, 94);
   }
 `;
+
 export const StyledBanner = styled.div`
   width: 100vw;
   @media screen and (min-width: 768px) {
@@ -148,4 +151,5 @@ export const StyledNavbarSection = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 3rem;
+  height: fit-content;
 `;

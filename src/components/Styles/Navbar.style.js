@@ -43,13 +43,13 @@ export const StyledNavbarContainer = styled.nav`
   list-style: none;
   position: fixed;
   top: 0;
-  padding: 3rem 0 2rem 0.5rem;
+  padding: 1rem 0 1rem 0.5rem;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
   transition: 0.5s;
 
   @media screen and (min-width: 768px) {
     position: relative;
-    height: auto;
+    height: fit-content;
     width: 100%;
     left: 0;
     transition: 0s;
@@ -101,6 +101,7 @@ export const StyledNavButton = styled.button`
   cursor: pointer;
   padding: 0.78rem 1rem;
   transition: 0.3s background-color;
+
   &:hover {
     background-color: #3579a0;
   }
@@ -129,6 +130,7 @@ export const StyledSubmenuItem = styled.li`
   background-color: #3579a0;
   transition: 0.3s background-color;
   color: #fff;
+
   &:hover {
     background-color: #3399ff;
   }
