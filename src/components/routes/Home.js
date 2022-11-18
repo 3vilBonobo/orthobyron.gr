@@ -16,6 +16,7 @@ import {
   StyledIntroContainer,
   StyledReviewsSection,
   StyledTreatmentsSection,
+  StyledTreatmentsTitle,
   StyledInfoText,
   StyledCTASection,
   StyledClinicsSection,
@@ -48,6 +49,7 @@ const Home = () => {
       </StyledReviewsSection>
 
       <StyledTreatmentsSection>
+        <StyledTreatmentsTitle>ΘΕΡΑΠΕΙΕΣ</StyledTreatmentsTitle>
         <Treatment />
       </StyledTreatmentsSection>
       <StyledCTASection>

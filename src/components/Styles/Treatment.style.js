@@ -34,9 +34,10 @@ export const StyledTreatmentBox = styled(Link)`
     transform: scale(1.2);
   }
   @media screen and (min-width: 768px) {
-    width: 300px;
-    height: 200px;
+    width: 380px;
+    height: 250px;
     margin: 1.5rem;
+    border-radius: 10px;
   }
 `;
 

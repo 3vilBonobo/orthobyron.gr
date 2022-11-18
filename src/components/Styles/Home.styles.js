@@ -77,12 +77,12 @@ export const StyledTreatmentsSection = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 6rem 0;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+  padding-block: 1rem 3rem;
+`;
+
+export const StyledTreatmentsTitle = styled.h2`
+  font-size: 2.1rem;
+  padding-bottom: 3rem;
 `;
 export const StyledInfoText = styled.p`
   font-size: 1.2rem;
