@@ -13,6 +13,7 @@ const ClinicsCarousel = ({ clinic }) => {
       <Carousel
         showArrows
         autoPlay
+        infiniteLoop
         showStatus={false}
         transitionTime={1500}
         showThumbs={false}

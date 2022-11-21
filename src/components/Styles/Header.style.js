@@ -123,6 +123,7 @@ export const StyledCTA = styled(Link)`
   background-color: #3579a0;
   color: #fff;
   transition: 0.5s background-color;
+
   &:hover {
     background-color: #3399ff;
   }
