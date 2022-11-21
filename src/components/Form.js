@@ -30,7 +30,7 @@ const Form = () => {
   };
   return (
     <StyledFormContainer>
-      <StyledFormTitle>Επικοινωνήστε μαζί μας!</StyledFormTitle>
+      <StyledFormTitle>Συμπληρώστε τη φόρμα!</StyledFormTitle>
       <StyledForm onSubmit={handleSubmit(submitForm)}>
         <StyledFormInput
           type="text"
