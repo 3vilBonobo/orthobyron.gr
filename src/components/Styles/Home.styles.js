@@ -84,13 +84,12 @@ export const StyledIntroSection = styled.section`
 export const StyledIntroContainer = styled.div`
   text-align: center;
   font-size: 1.1rem;
-  width: 80%;
+  width: 75%;
   padding: 0.5rem 4rem;
   line-height: 2.3rem;
   @media screen and (min-width: 768px) {
     max-width: 60%;
     font-size: 1.5rem;
-
     font-weight: 500;
   }
 `;
@@ -102,7 +101,6 @@ export const StyledReviewsSection = styled.section`
   justify-content: center;
   background-color: #fff;
   color: #1e345e;
-  width: 100%;
 `;
 
 export const StyledTreatmentsSection = styled.section`
@@ -121,12 +119,17 @@ export const StyledTreatmentsSection = styled.section`
 export const StyledTreatmentsTitle = styled.h2`
   font-size: 2.1rem;
   padding-bottom: 3rem;
+  color: #2d6586;
 `;
 export const StyledInfoText = styled.p`
-  font-size: 1.2rem;
-  font-weight: 500;
+  padding: 2rem 5rem;
   color: #3579a0;
+  max-width: 70%;
+  text-align: center;
+  font-size: 1.1rem;
   @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+    font-weight: 500;
     padding-block: 5rem;
   }
 `;
@@ -154,7 +157,7 @@ export const StyledClinicsTitle = styled.h2`
   text-align: center;
   background-color: #cae3f0;
   padding: 3rem;
-  color: #3579a0;
+  color: #2d6586;
   margin: 2rem 0;
 `;
 
