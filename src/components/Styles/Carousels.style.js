@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 
 export const StyledReviewsCarouselContainer = styled.div`
-  width: 90%;
+  width: 100%;
   height: auto;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     padding: 3rem;
     max-width: 60%;
   }
 `;
 export const StyledReviewsCarouselWrapper = styled.div`
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;

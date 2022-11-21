@@ -10,7 +10,7 @@ export const StyledBurgerIcon = styled(BiMenu)`
   color: #2d6586;
   font-size: 3.8rem;
   top: 0.8rem;
-  right: 3.5rem;
+  right: 2.5rem;
   z-index: 8;
   cursor: pointer;
   @media screen and (min-width: 768px) {
@@ -22,8 +22,8 @@ export const StyledCloseIcon = styled(MdClose)`
   position: absolute;
   color: #fff;
   font-size: 2.5rem;
-  top: 2.8rem;
-  right: 3rem;
+  top: 2.5rem;
+  right: 2rem;
   margin-right: 1rem;
   z-index: 10;
   cursor: pointer;

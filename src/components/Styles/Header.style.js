@@ -17,7 +17,7 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledBanner = styled.div`
-  width: 100vw;
+  width: 100%;
   @media screen and (min-width: 768px) {
     width: 50%;
     min-width: 400px;
@@ -65,7 +65,7 @@ export const StyledBottomHeaderSection = styled.div`
 `;
 
 export const StyledPhone = styled.a`
-  width: 350px;
+  min-width: 200px;
   text-align: center;
   display: inline-block;
   font-weight: 600;
@@ -73,6 +73,7 @@ export const StyledPhone = styled.a`
   padding: 1rem;
   color: #3579a0;
   @media screen and (min-width: 768px) {
+    max-width: 350px;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 500;
@@ -119,7 +120,7 @@ export const StyledCTA = styled(Link)`
   justify-content: center;
   width: 100%;
   font-weight: 600;
-  padding: 1.2rem 1.2rem 2.4rem 1.2rem;
+  padding: 1.2rem;
   background-color: #3579a0;
   color: #fff;
   transition: 0.5s background-color;
@@ -132,6 +133,7 @@ export const StyledCTA = styled(Link)`
     align-self: center;
     width: 250px;
     border-radius: 10px;
+    padding: 1.2rem 1.2rem 2.4rem 1.2rem;
   }
 `;
 

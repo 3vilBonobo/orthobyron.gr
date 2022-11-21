@@ -12,21 +12,22 @@ export const StyledHero = styled.div`
 `;
 
 export const StyledHeroTitle = styled.h1`
-  font-size: 3.5rem;
   position: absolute;
-  top: 15rem;
+  top: 7rem;
   color: #fff;
   text-shadow: 2px 2px 6px rgba(30, 3, 33, 0.99),
     -4px -3px 7px rgba(30, 3, 33, 0.99);
+  @media screen and (min-width: 768px) {
+    top: 15rem;
+    font-size: 3.5rem;
+  }
 `;
 
 export const StyledHeroBtn = styled.a`
   overflow: hidden;
   position: absolute;
-  font-size: 2.2rem;
-  font-weight: 500;
-  background-color: rgba(30, 3, 33, 0.2);
   color: white;
+  font-size: 1.8rem;
   padding: 2rem 3rem;
   text-decoration: none;
   border: 3px solid white;
@@ -37,14 +38,20 @@ export const StyledHeroBtn = styled.a`
   box-shadow: 2px 2px 6px rgba(30, 3, 33, 0.99),
     -4px -3px 5px rgba(30, 3, 33, 0.99);
   cursor: pointer;
-  &:hover {
+  &:hover,
+  :active {
     background-color: rgba(30, 3, 33, 0.4);
-
     &:after {
       left: 120%;
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
+    @media screen and (min-width: 768px) {
+      font-size: 2.2rem;
+      font-weight: 500;
+      background-color: rgba(30, 3, 33, 0.2);
+    }
   }
+
   &:after {
     background: #fff;
     content: '';
@@ -75,11 +82,17 @@ export const StyledIntroSection = styled.section`
 `;
 
 export const StyledIntroContainer = styled.div`
-  max-width: 60%;
-  font-size: 1.5rem;
   text-align: center;
+  font-size: 1.1rem;
+  width: 80%;
+  padding: 0.5rem 4rem;
   line-height: 2.3rem;
-  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    max-width: 60%;
+    font-size: 1.5rem;
+
+    font-weight: 500;
+  }
 `;
 
 export const StyledReviewsSection = styled.section`
@@ -89,6 +102,7 @@ export const StyledReviewsSection = styled.section`
   justify-content: center;
   background-color: #fff;
   color: #1e345e;
+  width: 100%;
 `;
 
 export const StyledTreatmentsSection = styled.section`
