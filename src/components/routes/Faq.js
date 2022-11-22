@@ -1,11 +1,24 @@
 import { patients } from '../../data/data';
+import FaqAccordion from '../FaqAccordion';
+import {
+  StyledFaqMainSection,
+  StyledFaqTitle,
+  StyledFaqContainer,
+  StyledFaqInfo,
+  StyledFaqImage,
+} from '../styles/Faq.style';
 
 const Faq = () => {
   return (
-    <div>
-      <h1>{patients.faq.title}</h1>
-      <p>{patients.faq.info}</p>
-    </div>
+    <StyledFaqMainSection>
+      <StyledFaqTitle>Συχνές Ερωτήσεις</StyledFaqTitle>
+      <StyledFaqContainer>
+        <StyledFaqInfo>
+          <FaqAccordion patients={patients} />
+        </StyledFaqInfo>
+        <StyledFaqImage src={patients.faq.image} />
+      </StyledFaqContainer>
+    </StyledFaqMainSection>
   );
 };
 
