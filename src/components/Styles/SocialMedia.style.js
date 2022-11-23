@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BsFacebook, BsInstagram, BsFillTelephoneFill } from 'react-icons/bs';
+import { BsFacebook, BsFillTelephoneFill } from 'react-icons/bs';
 import { MdMail } from 'react-icons/md';
 
 export const StyledSocialsHomeWrapper = styled.div`
@@ -18,10 +18,6 @@ export const StyledFacebookHome = styled(BsFacebook)`
   color: #fff;
 `;
 
-export const StyledInstagramHome = styled(BsInstagram)`
-  font-size: 4rem;
-  color: #fff;
-`;
 export const StyledMailHome = styled(MdMail)`
   font-size: 5rem;
   color: #fff;

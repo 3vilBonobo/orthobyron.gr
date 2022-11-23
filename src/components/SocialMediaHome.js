@@ -3,7 +3,6 @@ import {
   StyledSocialsHomeWrapper,
   StyledSocialLink,
   StyledFacebookHome,
-  StyledInstagramHome,
   StyledMailHome,
   StyledPhoneHome,
 } from './styles/SocialMedia.style';
@@ -13,9 +12,6 @@ const SocialMediaHome = () => {
     <StyledSocialsHomeWrapper>
       <StyledSocialLink href={contact.facebook} target="_blank">
         <StyledFacebookHome />
-      </StyledSocialLink>
-      <StyledSocialLink href={contact.instagram} target="_blank">
-        <StyledInstagramHome />
       </StyledSocialLink>
       <StyledSocialLink href={`mailto:${contact.mail}`} target="_blank">
         <StyledMailHome />
