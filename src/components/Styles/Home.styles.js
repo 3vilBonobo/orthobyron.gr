@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledMain = styled.div`
   width: 100%;
   position: relative;
-  top: 180px;
+  top: 140px;
 `;
 export const StyledHero = styled.div`
   width: 100%;
