@@ -1,11 +1,12 @@
 import { treatments } from '../../data/data';
+import { StyledTreatmentSection } from '../styles/Treatments.style';
 
 const Invisalign = () => {
   return (
-    <div>
+    <StyledTreatmentSection>
       <h1>{treatments[3].name}</h1>
       <p>{treatments[3].description}</p>
-    </div>
+    </StyledTreatmentSection>
   );
 };
 

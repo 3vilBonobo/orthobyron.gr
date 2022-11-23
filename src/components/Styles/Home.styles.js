@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledMain = styled.div`
+  width: 100%;
   position: relative;
   top: 180px;
 `;
 export const StyledHero = styled.div`
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -78,14 +80,13 @@ export const StyledIntroSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  padding: 1rem;
 `;
 
 export const StyledIntroContainer = styled.div`
   text-align: center;
   font-size: 1.1rem;
   width: 75%;
-  padding: 0.5rem 4rem;
   line-height: 2.3rem;
   @media screen and (min-width: 768px) {
     max-width: 60%;
@@ -122,7 +123,7 @@ export const StyledTreatmentsTitle = styled.h2`
   color: #2d6586;
 `;
 export const StyledInfoText = styled.p`
-  padding: 2rem 5rem;
+  padding: 2rem 1rem;
   color: #3579a0;
   max-width: 70%;
   text-align: center;

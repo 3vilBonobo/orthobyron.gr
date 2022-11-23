@@ -17,7 +17,7 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledBanner = styled.div`
-  width: 100%;
+  width: auto;
   @media screen and (min-width: 768px) {
     width: 50%;
     min-width: 400px;
@@ -38,7 +38,6 @@ export const StyledTopHeaderSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -51,7 +50,6 @@ export const StyledContactHeaderSection = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
 `;
 
 export const StyledBottomHeaderSection = styled.div`
@@ -60,7 +58,7 @@ export const StyledBottomHeaderSection = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+
   color: #fff;
 `;
 
@@ -89,15 +87,16 @@ export const StyledPhone = styled.a`
 `;
 
 export const StyledEmail = styled.a`
-  width: 350px;
   text-align: center;
   display: none;
   font-weight: 600;
   text-decoration: none;
   padding: 1rem;
   color: #3579a0;
+  width: fit-content;
 
   @media screen and (min-width: 768px) {
+    width: 350px;
     display: inline-block;
     width: fit-content;
     text-align: center;

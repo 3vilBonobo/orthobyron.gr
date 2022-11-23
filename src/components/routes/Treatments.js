@@ -1,14 +1,25 @@
 import { Outlet } from 'react-router-dom';
 import { treatmentsGeneral } from '../../data/data';
+import Treatment from '../Treatment';
+import {
+  StyledTreatmentsMainSection,
+  StyledTreatmentsMainTitle,
+  StyledTreatmentsMainInfo,
+  StyledTreatmentsMainContainer,
+} from '../styles/Treatments.style';
 
 const Treatments = () => {
   return (
-    <div>
-      <h1>{treatmentsGeneral.name}</h1>
-      <p>{treatmentsGeneral.description}</p>
-
+    <StyledTreatmentsMainSection>
+      <StyledTreatmentsMainTitle>
+        {treatmentsGeneral.name}
+      </StyledTreatmentsMainTitle>
+      <StyledTreatmentsMainInfo>
+        {treatmentsGeneral.description}
+      </StyledTreatmentsMainInfo>
+      <StyledTreatmentsMainContainer></StyledTreatmentsMainContainer>
       <Outlet />
-    </div>
+    </StyledTreatmentsMainSection>
   );
 };
 
