@@ -92,7 +92,7 @@ export const StyledIntroContainer = styled.div`
   line-height: 2.3rem;
   @media screen and (min-width: 768px) {
     max-width: 60%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
   }
 `;
@@ -180,6 +180,9 @@ export const StyledWorkHoursSection = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    padding: 3rem 1rem;
+  }
 `;
 
 export const StyledMapSection = styled.section`
@@ -189,6 +192,9 @@ export const StyledMapSection = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    padding: 3rem 1rem;
+  }
 `;
 export const StyledMapWrapper = styled.section`
   background-color: #e4e8f0;

@@ -10,7 +10,7 @@ export const StyledTreatmentContainer = styled.div`
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    max-width: 80%;
+    max-width: 85%;
   }
 `;
 
