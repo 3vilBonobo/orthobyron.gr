@@ -209,6 +209,7 @@ export const StyledPersonnelSection = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 3rem 1rem;
 `;
 
 export const StyledSocialsSection = styled.section`

@@ -21,3 +21,23 @@ export const StyledAppointmentBtn = styled(Link)`
     padding-inline: 2.5rem;
   }
 `;
+export const StyledPersonHomeBtn = styled(Link)`
+  text-decoration: none;
+  background-color: #3579a0;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.5s background-color;
+  margin-block: 1rem 3rem;
+  &:hover {
+    background-color: #3399ff;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-inline: 1.8rem;
+  }
+`;
