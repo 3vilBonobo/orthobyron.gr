@@ -22,8 +22,8 @@ export const StyledCloseIcon = styled(MdClose)`
   position: absolute;
   color: ${(props) => props.theme.white};
   font-size: 2.5rem;
-  top: 2.5rem;
-  right: 2rem;
+  top: 1.9rem;
+  right: 1.9rem;
   margin-right: 1rem;
   z-index: 10;
   cursor: pointer;
@@ -34,7 +34,7 @@ export const StyledCloseIcon = styled(MdClose)`
 
 export const StyledNavbarContainer = styled.nav`
   z-index: 9;
-  height: 100vh;
+  height: 580px;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ export const StyledMenuItems = styled.ul`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 170px;
+  padding-top: 80px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -111,8 +111,7 @@ export const StyledNavButton = styled.button`
   color: ${(props) => props.theme.white};
   width: 100vw;
   text-align: center;
-  background-color: ${({ submenu }) =>
-    submenu ? `${(props) => props.theme.white}` : 'inherit'};
+  background-color: ${({ submenu }) => (submenu ? `#3579a0` : 'inherit')};
   border: none;
   cursor: pointer;
   padding: 1.3rem 1rem;

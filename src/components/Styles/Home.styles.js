@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 export const StyledMain = styled.div`
   width: 100%;
   position: relative;
-  top: 140px;
+  top: 180px;
+  @media screen and (min-width: 768px) {
+    top: 140px;
+  }
 `;
 export const StyledHero = styled.div`
   width: 100%;
@@ -68,6 +71,12 @@ export const StyledHeroBtn = styled.a`
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 50px;
     z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.8rem;
+      padding: 2rem 3rem;
+      border: 3px solid ${(props) => props.theme.white};
+    }
   }
 `;
 

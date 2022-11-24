@@ -63,8 +63,10 @@ export const StyledBottomHeaderSection = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
-  color: #fff;
+  color: ${(props) => props.theme.white};
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const StyledPhone = styled.a`

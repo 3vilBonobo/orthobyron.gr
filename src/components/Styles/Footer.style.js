@@ -5,7 +5,7 @@ export const StyledFooter = styled.footer`
   width: 100%;
   background-color: ${(props) => props.theme.darkBlue};
   position: relative;
-  top: 180px;
+  top: 130px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,8 @@ export const StyledFooterTopSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
@@ -59,13 +61,17 @@ export const StyledFooterAddress = styled.div`
   line-height: 1.7rem;
 `;
 
-export const StyledFooterAddressTitle = styled.h3``;
+export const StyledFooterAddressTitle = styled.h3`
+  padding-bottom: 1rem;
+`;
 export const StyledFooterAddressText = styled.p``;
 export const StyledFooterAddressPhone = styled.a`
   text-decoration: none;
+  color: ${(props) => props.theme.brightCyan};
 `;
 export const StyledFooterAddressEmail = styled.a`
   text-decoration: none;
+  color: ${(props) => props.theme.brightCyan};
 `;
 
 export const StyledFooterSocial = styled.div``;
@@ -76,11 +82,12 @@ export const StyledFooterLinkBanner = styled.a`
 export const StyledFooterBanner = styled.img``;
 
 export const StyledFooterSeparator = styled.hr`
-  border: 1px solid grey;
+  border: 0.5px solid ${(props) => props.theme.navyBlue};
   width: 100%;
 `;
 
 export const StyledAttribution = styled.div`
+  color: ${(props) => props.theme.white};
   font-weight: 500;
   display: flex;
   flex-direction: column;
@@ -91,6 +98,6 @@ export const StyledAttribution = styled.div`
 `;
 
 export const StyledAttrLinks = styled.a`
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.brightCyan};
   text-decoration: none;
 `;
