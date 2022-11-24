@@ -4,7 +4,7 @@ export const StyledReviewsCarouselContainer = styled.div`
   width: 90%;
   height: auto;
   padding: 2rem;
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,5 +61,5 @@ export const StyledClinicsCarouselWrapper = styled.div`
 export const StyledClinicsCarouselTitle = styled.h2`
   padding: 2rem;
   text-align: center;
-  color: #2d6586;
+  color: ${(props) => props.theme.navyBlue};
 `;

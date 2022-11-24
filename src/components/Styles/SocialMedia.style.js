@@ -15,14 +15,14 @@ export const StyledSocialLink = styled.a`
 
 export const StyledFacebookHome = styled(BsFacebook)`
   font-size: 4rem;
-  color: #fff;
+  color: ${(props) => props.theme.white};
 `;
 
 export const StyledMailHome = styled(MdMail)`
   font-size: 5rem;
-  color: #fff;
+  color: ${(props) => props.theme.white};
 `;
 export const StyledPhoneHome = styled(BsFillTelephoneFill)`
   font-size: 4rem;
-  color: #fff;
+  color: ${(props) => props.theme.white};
 `;

@@ -48,7 +48,7 @@ export const StyledOverlay = styled.img`
 `;
 export const StyledTreatmentTitle = styled.h2`
   text-transform: uppercase;
-  color: white;
+  color: ${(props) => props.theme.white};
   position: absolute;
   top: 50%;
   left: 50%;

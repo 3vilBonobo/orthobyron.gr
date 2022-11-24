@@ -7,7 +7,7 @@ import { AiFillCaretDown } from 'react-icons/ai';
 export const StyledBurgerIcon = styled(BiMenu)`
   position: absolute;
   display: flex;
-  color: #2d6586;
+  color: ${(props) => props.theme.navyBlue};
   font-size: 3.8rem;
   top: 0.8rem;
   right: 2.5rem;
@@ -20,7 +20,7 @@ export const StyledBurgerIcon = styled(BiMenu)`
 
 export const StyledCloseIcon = styled(MdClose)`
   position: absolute;
-  color: #fff;
+  color: ${(props) => props.theme.white};
   font-size: 2.5rem;
   top: 2.5rem;
   right: 2rem;
@@ -38,8 +38,8 @@ export const StyledNavbarContainer = styled.nav`
   width: auto;
   display: flex;
   flex-direction: column;
-  background-color: rgba(30, 52, 94);
-  color: #ffffff;
+  background-color: ${(props) => props.theme.darkBlue};
+  color: ${(props) => props.theme.white};
   font-size: 1.4rem;
   list-style: none;
   position: fixed;
@@ -91,13 +91,13 @@ export const StyledMenuLink = styled(Link)`
   text-decoration: none;
   width: 100%;
   display: block;
-  color: #fff;
+  color: ${(props) => props.theme.white};
   padding: 1.3rem 1rem;
   text-align: center;
   transition: 0.3s background-color;
   &:hover,
   &:active {
-    background-color: #3579a0;
+    background-color: ${(props) => props.theme.lightBlue};
   }
   @media screen and (min-width: 768px) {
     border-radius: 10px;
@@ -108,10 +108,11 @@ export const StyledMenuLink = styled(Link)`
 
 export const StyledNavButton = styled.button`
   font-size: 1.4rem;
-  color: #fff;
+  color: ${(props) => props.theme.white};
   width: 100vw;
   text-align: center;
-  background-color: ${({ submenu }) => (submenu ? '#3579a0' : 'inherit')};
+  background-color: ${({ submenu }) =>
+    submenu ? `${(props) => props.theme.white}` : 'inherit'};
   border: none;
   cursor: pointer;
   padding: 1.3rem 1rem;
@@ -119,7 +120,7 @@ export const StyledNavButton = styled.button`
 
   &:hover,
   &:active {
-    background-color: #3579a0;
+    background-color: ${(props) => props.theme.lightBlue};
   }
   @media screen and (min-width: 768px) {
     width: 100%;
@@ -145,13 +146,13 @@ export const StyledSubmenuItem = styled.li`
   font-size: 1.2rem;
   display: block;
   width: 100%;
-  background-color: #3579a0;
+  background-color: ${(props) => props.theme.lightBlue};
   transition: 0.3s background-color;
-  color: #fff;
+  color: ${(props) => props.theme.white};
 
   &:hover,
   &:active {
-    background-color: #3399ff;
+    background-color: ${(props) => props.theme.brightCyan};
   }
 
   @media screen and (min-width: 768px) {
@@ -165,6 +166,6 @@ export const StyledSubmenuItem = styled.li`
 `;
 export const StyledSubmenuLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: ${(props) => props.theme.white};
   padding-left: 1rem;
 `;

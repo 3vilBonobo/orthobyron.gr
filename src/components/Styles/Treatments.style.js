@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledTreatmentsMainSection = styled.div`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   background-image: url('images/tooth_bg.svg');
   background-size: cover;
   display: flex;
@@ -34,7 +34,7 @@ export const StyledTreatmentsMainContainer = styled.div`
 `;
 
 export const StyledTreatmentSection = styled.div`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   background-image: url('images/tooth_bg.svg');
   background-size: cover;
   display: flex;

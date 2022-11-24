@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledClinicsMainSection = styled.section`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   background-image: url('images/tooth_bg.svg');
   background-size: cover;
   display: flex;

@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { treatmentsGeneral } from '../../data/data';
-import Treatment from '../Treatment';
+
 import {
   StyledTreatmentsMainSection,
   StyledTreatmentsMainTitle,

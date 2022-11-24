@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const StyledFooter = styled.footer`
   width: 100%;
-  background-color: rgba(30, 52, 94);
+  background-color: ${(props) => props.theme.darkBlue};
   position: relative;
   top: 180px;
   padding: 2rem;
@@ -34,7 +34,7 @@ export const StyledFooterLogo = styled.img``;
 
 export const StyledFooterHours = styled.div`
   background-color: transparent;
-  color: #fff;
+  color: ${(props) => props.theme.white};
 `;
 
 export const StyledFooterAddressContainer = styled.div`
@@ -48,7 +48,7 @@ export const StyledFooterAddressContainer = styled.div`
 `;
 
 export const StyledFooterAddress = styled.div`
-  color: #fff;
+  color: ${(props) => props.theme.white};
   height: 200px;
   width: 250px;
   display: flex;
@@ -91,6 +91,6 @@ export const StyledAttribution = styled.div`
 `;
 
 export const StyledAttrLinks = styled.a`
-  color: #fff;
+  color: ${(props) => props.theme.white};
   text-decoration: none;
 `;

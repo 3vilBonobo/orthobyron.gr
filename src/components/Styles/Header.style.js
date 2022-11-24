@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const StyledHeader = styled.header`
   width: 100%;
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@ export const StyledHeader = styled.header`
   z-index: 10;
   top: 0;
   @media screen and (min-width: 768px) {
-    background-color: rgba(30, 52, 94);
+    background-color: ${(props) => props.theme.darkBlue};
   }
 `;
 

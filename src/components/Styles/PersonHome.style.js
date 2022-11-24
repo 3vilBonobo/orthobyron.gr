@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledPersonHomeContainer = styled.div`
-  color: rgba(30, 52, 94);
+  color: ${(props) => props.theme.lightGrey};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,20 +36,20 @@ export const StyledPersonImage = styled.img`
 
 export const StyledPersonName = styled.h3`
   padding: 1rem;
-  color: rgba(30, 52, 94);
+  color: ${(props) => props.theme.darkBlue};
   transition: 0.5s color;
   &:hover,
   &:active {
-    color: #3579a0;
+    color: ${(props) => props.theme.navyBlue};
   }
 `;
 
 export const StyledPersonProfession = styled.p`
-  color: rgba(30, 52, 94);
+  color: ${(props) => props.theme.darkBlue};
   transition: 0.5s color;
   &:hover,
   &:active {
-    color: #3579a0;
+    color: ${(props) => props.theme.navyBlue};
   }
 `;
 

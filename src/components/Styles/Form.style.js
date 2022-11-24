@@ -38,7 +38,7 @@ export const StyledFormOption = styled.option`
 `;
 
 export const StyledFormBtn = styled.button`
-  background-color: #3579a0;
+  background-color: ${(props) => props.theme.lightBlue};
   color: white;
   padding: 1rem 2rem;
   border: none;

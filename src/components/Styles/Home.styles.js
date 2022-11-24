@@ -19,7 +19,7 @@ export const StyledHeroTitle = styled(Link)`
   top: 7rem;
   text-decoration: none;
   font-weight: 500;
-  color: #fff;
+  color: ${(props) => props.theme.white};
   text-shadow: 2px 2px 6px rgba(30, 3, 33, 0.99),
     -4px -3px 7px rgba(30, 3, 33, 0.99);
 
@@ -32,11 +32,11 @@ export const StyledHeroTitle = styled(Link)`
 export const StyledHeroBtn = styled.a`
   overflow: hidden;
   position: absolute;
-  color: white;
+  color: ${(props) => props.theme.white};
   font-size: 1.8rem;
   padding: 2rem 3rem;
   text-decoration: none;
-  border: 3px solid white;
+  border: 3px solid ${(props) => props.theme.white};
   border-radius: 10px;
   text-decoration: none;
   text-shadow: 2px 2px 5px rgba(30, 3, 33, 0.99),
@@ -57,7 +57,7 @@ export const StyledHeroBtn = styled.a`
   }
 
   &:after {
-    background: #fff;
+    background: ${(props) => props.theme.white};
     content: '';
     height: 200px;
     left: -90px;
@@ -77,7 +77,7 @@ export const StyledHeroImg = styled.img`
 `;
 
 export const StyledIntroSection = styled.section`
-  background-color: #3579a0;
+  background-color: ${(props) => props.theme.lightBlue};
   color: #fff;
   display: flex;
   align-items: center;
@@ -102,12 +102,12 @@ export const StyledReviewsSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   color: #1e345e;
 `;
 
 export const StyledTreatmentsSection = styled.section`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   background-image: url('images/tooth_bg.svg');
   background-size: cover;
   background-position: center;
@@ -122,11 +122,11 @@ export const StyledTreatmentsSection = styled.section`
 export const StyledTreatmentsTitle = styled.h2`
   font-size: 2.1rem;
   padding-bottom: 3rem;
-  color: #2d6586;
+  color: ${(props) => props.theme.navyBlue};
 `;
 export const StyledInfoText = styled.p`
   padding: 2rem 1rem;
-  color: #3579a0;
+  color: ${(props) => props.theme.lightBlue};
   max-width: 70%;
   text-align: center;
   font-size: 1.1rem;
@@ -138,7 +138,7 @@ export const StyledInfoText = styled.p`
 `;
 export const StyledCTASection = styled.section`
   width: 100%;
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,7 +146,7 @@ export const StyledCTASection = styled.section`
 `;
 
 export const StyledClinicsSection = styled.section`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,9 +158,9 @@ export const StyledClinicsTitle = styled.h2`
   display: block;
   width: 100%;
   text-align: center;
-  background-color: #cae3f0;
+  background-color: ${(props) => props.theme.lightCyan};
   padding: 3rem;
-  color: #2d6586;
+  color: ${(props) => props.theme.navyBlue};
   margin: 2rem 0;
 `;
 
@@ -174,7 +174,7 @@ export const StyledClinicsCarousels = styled.div`
   }
 `;
 export const StyledWorkHoursSection = styled.section`
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,7 +186,7 @@ export const StyledWorkHoursSection = styled.section`
 `;
 
 export const StyledMapSection = styled.section`
-  background-color: #e4e8f0;
+  background-color: ${(props) => props.theme.lightGrey};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,7 +197,7 @@ export const StyledMapSection = styled.section`
   }
 `;
 export const StyledMapWrapper = styled.section`
-  background-color: #e4e8f0;
+  background-color: ${(props) => props.theme.lightGrey};
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -213,7 +213,7 @@ export const StyledMapWrapper = styled.section`
 `;
 
 export const StyledPersonnelSection = styled.section`
-  background-color: #e4e8f0;
+  background-color: ${(props) => props.theme.lightGrey};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,5 +224,5 @@ export const StyledPersonnelSection = styled.section`
 
 export const StyledSocialsSection = styled.section`
   width: 100%;
-  background-color: #3579a0;
+  background-color: ${(props) => props.theme.lightBlue};
 `;

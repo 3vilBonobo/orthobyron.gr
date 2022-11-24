@@ -6,7 +6,7 @@ export const StyledNotFound = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #fff;
+  background-color: ${(props) => props.theme.white};
   background-image: url('images/tooth_bg.svg');
   background-size: cover;
   background-position: center;
