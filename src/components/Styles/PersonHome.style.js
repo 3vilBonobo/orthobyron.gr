@@ -37,10 +37,20 @@ export const StyledPersonImage = styled.img`
 export const StyledPersonName = styled.h3`
   padding: 1rem;
   color: rgba(30, 52, 94);
+  transition: 0.5s color;
+  &:hover,
+  &:active {
+    color: #3579a0;
+  }
 `;
 
 export const StyledPersonProfession = styled.p`
   color: rgba(30, 52, 94);
+  transition: 0.5s color;
+  &:hover,
+  &:active {
+    color: #3579a0;
+  }
 `;
 
 export const StyledPersonHomeText = styled.p`
