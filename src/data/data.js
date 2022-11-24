@@ -303,13 +303,13 @@ export const addresses = [
   {
     title: 'Ιατρείο Βύρωνα',
     address: 'Φλέμινγκ 62, Βύρωνας',
-    phone: 'Τηλ.: 210 7659556',
-    email: 'E: orthobyron@gmail.com',
+    phone: '210 7659556',
+    email: 'orthobyron@gmail.com',
   },
   {
     title: 'Ιατρείο Πειραιά',
-    address: ' Ηρώων Πολυτεχνείου 55-57, Πειραιάς (Εμπορικό Κέντρο ΤΕΡΨΙΘΕΑ)',
-    phone: ' Τηλ.: 210 4296562',
-    email: '  E: orthopiraeus@gmail.com',
+    address: 'Ηρώων Πολυτεχνείου 55-57, Πειραιάς (Εμπορικό Κέντρο ΤΕΡΨΙΘΕΑ)',
+    phone: '210 4296562',
+    email: 'orthopiraeus@gmail.com',
   },
 ];

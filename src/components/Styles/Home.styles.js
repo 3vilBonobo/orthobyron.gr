@@ -48,8 +48,6 @@ export const StyledHeroBtn = styled.a`
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
     @media screen and (min-width: 768px) {
-      font-size: 2.2rem;
-      font-weight: 500;
       background-color: rgba(30, 3, 33, 0.2);
     }
   }

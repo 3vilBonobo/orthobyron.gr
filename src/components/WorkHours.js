@@ -1,5 +1,7 @@
 import { workHours } from '../data/data';
 import {
+  StyledWorkHoursContainer,
+  StyledWorkHoursTitle,
   StyledWorkHoursWrapper,
   StyledDaysContainer,
   StyledHoursContainer,
@@ -10,8 +12,8 @@ import {
 
 export const WorkHours = () => {
   return (
-    <>
-      <h3>ΩΡΑΡΙΟ</h3>
+    <StyledWorkHoursContainer>
+      <StyledWorkHoursTitle>ΩΡΑΡΙΟ</StyledWorkHoursTitle>
       <StyledWorkHoursWrapper>
         <StyledDaysContainer>
           <StyledDays>
@@ -28,7 +30,7 @@ export const WorkHours = () => {
           </StyledHours>
         </StyledHoursContainer>
       </StyledWorkHoursWrapper>
-    </>
+    </StyledWorkHoursContainer>
   );
 };
 
