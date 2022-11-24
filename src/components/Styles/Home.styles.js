@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const StyledMain = styled.div`
   width: 100%;
@@ -13,12 +14,15 @@ export const StyledHero = styled.div`
   justify-content: center;
 `;
 
-export const StyledHeroTitle = styled.h1`
+export const StyledHeroTitle = styled(Link)`
   position: absolute;
   top: 7rem;
+  text-decoration: none;
+  font-weight: 500;
   color: #fff;
   text-shadow: 2px 2px 6px rgba(30, 3, 33, 0.99),
     -4px -3px 7px rgba(30, 3, 33, 0.99);
+
   @media screen and (min-width: 768px) {
     top: 15rem;
     font-size: 3.5rem;

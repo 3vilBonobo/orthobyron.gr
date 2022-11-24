@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <StyledMain>
       <StyledHero>
-        <StyledHeroTitle>ΟΡΘΟΔΟΝΤΙΚΑ ΙΑΤΡΕΙΑ</StyledHeroTitle>
+        <StyledHeroTitle to={'/clinics'}>ΟΡΘΟΔΟΝΤΙΚΑ ΙΑΤΡΕΙΑ</StyledHeroTitle>
         <StyledHeroBtn href={`tel:${contact.phone}`}>210 7659556</StyledHeroBtn>
         <StyledHeroImg src={Salon1} alt="" />
       </StyledHero>
