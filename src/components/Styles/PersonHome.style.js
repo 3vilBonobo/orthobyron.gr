@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledPersonHomeContainer = styled.div`
-  color: ${(props) => props.theme.lightGrey};
+  color: ${(props) => props.theme.darkBlue};
   display: flex;
   flex-direction: column;
   align-items: center;
