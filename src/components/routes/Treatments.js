@@ -16,9 +16,6 @@ const Treatments = () => {
       <StyledTreatmentsMainTitle>
         {treatmentsGeneral.name}
       </StyledTreatmentsMainTitle>
-      <StyledTreatmentsMainInfo>
-        {treatmentsGeneral.description}
-      </StyledTreatmentsMainInfo>
       <StyledTreatmentsMainContainer>
         {treatments.map((item, index) => {
           return (
@@ -32,6 +29,11 @@ const Treatments = () => {
           );
         })}
       </StyledTreatmentsMainContainer>
+
+      <StyledTreatmentsMainInfo>
+        {treatmentsGeneral.description}
+      </StyledTreatmentsMainInfo>
+
       <Outlet />
     </StyledTreatmentsMainSection>
   );
