@@ -11,6 +11,7 @@ export const StyledOralHygieneMainSection = styled.div`
   width: 100%;
   position: relative;
   top: 180px;
+  padding: 7rem 1rem 6rem 1rem;
   @media screen and (min-width: 768px) {
     padding: 3rem 10rem;
   }
@@ -33,6 +34,7 @@ export const StyledOralHygieneInfoTop = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
+  width: 100%;
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
