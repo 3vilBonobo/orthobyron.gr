@@ -12,6 +12,9 @@ export const StyledAdviceMainSection = styled.div`
   padding: 1rem 3rem 6rem 3rem;
   position: relative;
   top: 180px;
+  @media screen and (min-width: 768px) {
+    top: 140px;
+  }
 `;
 export const StyledAdviceTitle = styled.h1`
   padding: 4rem;

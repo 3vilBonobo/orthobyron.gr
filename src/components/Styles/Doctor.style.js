@@ -12,6 +12,10 @@ export const StyledDoctorMainSection = styled.div`
   padding: 1rem;
   position: relative;
   top: 180px;
+  @media screen and (min-width: 768px) {
+    top: 140px;
+    padding: 4rem;
+  }
 `;
 
 export const StyledDoctorContainer = styled.div`

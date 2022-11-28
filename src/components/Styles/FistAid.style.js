@@ -14,6 +14,7 @@ export const StyledFirstAidMainSection = styled.div`
   padding: 4rem 1rem 5rem 1rem;
   @media screen and (min-width: 768px) {
     padding: 3rem 10rem;
+    top: 140px;
   }
 `;
 

@@ -13,6 +13,9 @@ export const StyledFaqMainSection = styled.div`
   padding: 4rem;
   position: relative;
   top: 180px;
+  @media screen and (min-width: 768px) {
+    top: 140px;
+  }
 `;
 
 export const StyledFaqTitle = styled.h1`

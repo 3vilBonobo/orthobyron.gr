@@ -14,6 +14,7 @@ export const StyledClinicsMainSection = styled.section`
   padding-block: 1.5rem 3.5rem;
   @media screen and (min-width: 768px) {
     padding-inline: 10rem;
+    top: 140px;
   }
 `;
 

@@ -14,6 +14,7 @@ export const StyledOralHygieneMainSection = styled.div`
   padding: 7rem 1rem 6rem 1rem;
   @media screen and (min-width: 768px) {
     padding: 3rem 10rem;
+    top: 140px;
   }
 `;
 
