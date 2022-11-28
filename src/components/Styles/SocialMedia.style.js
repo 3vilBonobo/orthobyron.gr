@@ -10,19 +10,31 @@ export const StyledSocialsHomeWrapper = styled.div`
 `;
 export const StyledSocialLink = styled.a`
   text-decoration: none;
-  padding: 3rem;
+  padding: 1.5rem 1rem;
+  @media screen and (min-width: 768px) {
+    padding: 3rem;
+  }
 `;
 
 export const StyledFacebookHome = styled(BsFacebook)`
-  font-size: 4rem;
   color: ${(props) => props.theme.white};
+  font-size: 3rem;
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
 `;
 
 export const StyledMailHome = styled(MdMail)`
-  font-size: 5rem;
   color: ${(props) => props.theme.white};
+  font-size: 4rem;
+  @media screen and (min-width: 768px) {
+    font-size: 5rem;
+  }
 `;
 export const StyledPhoneHome = styled(BsFillTelephoneFill)`
-  font-size: 4rem;
   color: ${(props) => props.theme.white};
+  font-size: 3rem;
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
 `;

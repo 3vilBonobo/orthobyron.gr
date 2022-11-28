@@ -10,7 +10,7 @@ export const StyledAppointmentBtn = styled(Link)`
   font-size: 1.2rem;
   font-weight: 600;
   transition: 0.5s background-color;
-  margin-block: 1rem 3rem;
+  margin-block: 1rem 2rem;
   &:hover {
     background-color: ${(props) => props.theme.brightCyan};
   }
@@ -21,6 +21,7 @@ export const StyledAppointmentBtn = styled(Link)`
     padding-inline: 2.5rem;
   }
 `;
+
 export const StyledPersonHomeBtn = styled(Link)`
   text-decoration: none;
   background-color: ${(props) => props.theme.lightBlue};
@@ -30,7 +31,7 @@ export const StyledPersonHomeBtn = styled(Link)`
   font-size: 1.1rem;
   font-weight: 500;
   transition: 0.5s background-color;
-  margin-block: 1rem 3rem;
+  margin-block: 1rem;
   &:hover {
     background-color: ${(props) => props.theme.brightCyan};
   }

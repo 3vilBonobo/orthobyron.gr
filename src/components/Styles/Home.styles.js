@@ -97,7 +97,7 @@ export const StyledIntroSection = styled.section`
 export const StyledIntroContainer = styled.div`
   text-align: center;
   font-size: 1.1rem;
-  width: 75%;
+  width: 90%;
   line-height: 2.3rem;
   @media screen and (min-width: 768px) {
     max-width: 60%;
@@ -136,7 +136,7 @@ export const StyledTreatmentsTitle = styled.h2`
 export const StyledInfoText = styled.p`
   padding: 2rem 1rem;
   color: ${(props) => props.theme.lightBlue};
-  max-width: 70%;
+  max-width: 90%;
   text-align: center;
   font-size: 1.1rem;
   @media screen and (min-width: 768px) {
@@ -189,6 +189,7 @@ export const StyledWorkHoursSection = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 2.5rem 1rem;
   @media screen and (min-width: 768px) {
     padding: 3rem 1rem;
   }
@@ -201,10 +202,12 @@ export const StyledMapSection = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 3rem 1rem;
   @media screen and (min-width: 768px) {
     padding: 3rem 1rem;
   }
 `;
+
 export const StyledMapWrapper = styled.section`
   background-color: ${(props) => props.theme.lightGrey};
   display: flex;
