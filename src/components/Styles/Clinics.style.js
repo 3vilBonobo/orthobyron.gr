@@ -11,6 +11,7 @@ export const StyledClinicsMainSection = styled.section`
   width: 100%;
   position: relative;
   top: 180px;
+  padding-block: 1.5rem 3.5rem;
   @media screen and (min-width: 768px) {
     padding-inline: 10rem;
   }
@@ -46,7 +47,7 @@ export const StyledClinicsInfo = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 500px;
-  padding-inline: 1rem;
+  padding-inline: 2rem;
   margin-bottom: 2rem;
   line-height: 2rem;
 `;
