@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const StyledTreatmentsMainSection = styled.div`
   background-color: ${(props) => props.theme.white};
@@ -39,6 +40,14 @@ export const StyledTreatmentsMainContainer = styled.div`
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
+`;
+
+export const StyledTreatmentsMainLink = styled(Link)`
+  text-decoration: none;
+  padding: 1rem 2rem;
+  color: ${(props) => props.theme.darkBlue};
+  border: 3px solid ${(props) => props.theme.darkBlue};
+  border-radius: 10px;
 `;
 
 export const StyledTreatmentSection = styled.div`

@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom';
-import { treatmentsGeneral } from '../../data/data';
+import { treatmentsGeneral, treatments } from '../../data/data';
 
 import {
   StyledTreatmentsMainSection,
   StyledTreatmentsMainTitle,
   StyledTreatmentsMainInfo,
   StyledTreatmentsMainContainer,
+  StyledTreatmentsMainLink,
 } from '../styles/Treatments.style';
 
 const Treatments = () => {
@@ -17,7 +18,15 @@ const Treatments = () => {
       <StyledTreatmentsMainInfo>
         {treatmentsGeneral.description}
       </StyledTreatmentsMainInfo>
-      <StyledTreatmentsMainContainer></StyledTreatmentsMainContainer>
+      <StyledTreatmentsMainContainer>
+        {treatments.map((item, index) => {
+          return (
+            <StyledTreatmentsMainLink to={item.url2} key={index}>
+              {item.name}
+            </StyledTreatmentsMainLink>
+          );
+        })}
+      </StyledTreatmentsMainContainer>
       <Outlet />
     </StyledTreatmentsMainSection>
   );
