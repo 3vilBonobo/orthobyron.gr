@@ -11,6 +11,7 @@ export const StyledFirstAidMainSection = styled.div`
   width: 100%;
   position: relative;
   top: 180px;
+  padding: 4rem 1rem 5rem 1rem;
   @media screen and (min-width: 768px) {
     padding: 3rem 10rem;
   }
@@ -27,8 +28,9 @@ export const StyledFirstAidWrapper = styled.div`
   }
 `;
 export const StyledFirstAidInfo = styled.div`
-  padding: 1rem;
+  padding: 3rem 1rem;
 `;
 export const StyledFirstAidImage = styled.img`
   border-radius: 50%;
+  width: 100%;
 `;
