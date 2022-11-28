@@ -9,12 +9,16 @@ export const StyledAdviceMainSection = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding: 4rem;
+  padding: 1rem 3rem 6rem 3rem;
   position: relative;
   top: 180px;
 `;
 export const StyledAdviceTitle = styled.h1`
-  margin-bottom: 3rem;
+  padding: 4rem;
+  margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 export const StyledAdviceWrapper = styled.div`
