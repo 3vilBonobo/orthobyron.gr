@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { treatmentsGeneral, treatments } from '../../data/data';
 
 import {
@@ -10,6 +10,7 @@ import {
 } from '../styles/Treatments.style';
 
 const Treatments = () => {
+  const location = useLocation();
   return (
     <StyledTreatmentsMainSection>
       <StyledTreatmentsMainTitle>
@@ -21,7 +22,11 @@ const Treatments = () => {
       <StyledTreatmentsMainContainer>
         {treatments.map((item, index) => {
           return (
-            <StyledTreatmentsMainLink to={item.url2} key={index}>
+            <StyledTreatmentsMainLink
+              to={item.url2}
+              key={index}
+              state={{ background: location }}
+            >
               {item.name}
             </StyledTreatmentsMainLink>
           );

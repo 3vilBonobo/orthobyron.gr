@@ -39,6 +39,7 @@ export const StyledTreatmentsMainContainer = styled.div`
   width: 100%;
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    padding-top: 2rem;
   }
 `;
 

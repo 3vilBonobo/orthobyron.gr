@@ -1,5 +1,5 @@
 import './App.css';
-import { AnimatePresence } from 'framer-motion';
+
 import { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
@@ -43,34 +43,42 @@ const App = () => {
     return () => window.removeEventListener('scroll', listenToScroll);
   });
   const location = useLocation();
+  const background = location.state && location.state.background;
   return (
     <>
-      <AnimatePresence>
-        <Header isVisible={isVisible} />
+      <Header isVisible={isVisible} />
 
-        <Routes location={location} key={location.key}>
-          <Route path="doctor" element={<Doctor />} />
-          <Route path="clinics" element={<Clinics />} />
-          <Route path="ageGroups" element={<AgeGroups />} />
-          <Route path="treatments" element={<Treatments />}>
-            <Route path="invisibleBraces" element={<InvisibleBraces />} />
-            <Route path="tongueBraces" element={<TongueBraces />} />
-            <Route path="movingBraces" element={<MovingBraces />} />
-            <Route path="metalBraces" element={<MetalBraces />} />
-            <Route path="invisalign" element={<Invisalign />} />
-          </Route>
-          <Route path="oralHygiene" element={<OralHygiene />} />
-          <Route path="advice" element={<Advice />} />
-          <Route path="firstAid" element={<FirstAid />} />
-          <Route path="emergencies" element={<Emergencies />} />
-          <Route path="faq" element={<Faq />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-          <Route exact path="/" element={<Home />} />
-        </Routes>
+      <Routes location={background || location} key={location.key}>
+        <Route path="doctor" element={<Doctor />} />
+        <Route path="clinics" element={<Clinics />} />
+        <Route path="ageGroups" element={<AgeGroups />} />
+        <Route path="treatments" element={<Treatments />}>
+          <Route path="invisibleBraces" element={<InvisibleBraces />} />
+          <Route path="tongueBraces" element={<TongueBraces />} />
+          <Route path="movingBraces" element={<MovingBraces />} />
+          <Route path="metalBraces" element={<MetalBraces />} />
+          <Route path="invisalign" element={<Invisalign />} />
+          {background && (
+            <Route>
+              <Route path="invisibleBraces" element={<InvisibleBraces />} />
+              <Route path="tongueBraces" element={<TongueBraces />} />
+              <Route path="movingBraces" element={<MovingBraces />} />
+              <Route path="metalBraces" element={<MetalBraces />} />
+              <Route path="invisalign" element={<Invisalign />} />
+            </Route>
+          )}
+        </Route>
+        <Route path="oralHygiene" element={<OralHygiene />} />
+        <Route path="advice" element={<Advice />} />
+        <Route path="firstAid" element={<FirstAid />} />
+        <Route path="emergencies" element={<Emergencies />} />
+        <Route path="faq" element={<Faq />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+        <Route exact path="/" element={<Home />} />
+      </Routes>
 
-        <Footer />
-      </AnimatePresence>
+      <Footer />
     </>
   );
 };

@@ -3,8 +3,8 @@ import { StyledAttribution, StyledAttrLinks } from './styles/Footer.style';
 const Attribution = () => {
   return (
     <StyledAttribution>
-      <div class="copyright">Copyright 2022 - Orthobyron.gr</div>
-      <div class="attr-dev">
+      <div className="copyright">Copyright 2022 - Orthobyron.gr</div>
+      <div className="attr-dev">
         Powered by
         <StyledAttrLinks
           href="https://www.nikosvasilakos.gr/"
