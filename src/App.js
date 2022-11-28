@@ -1,6 +1,7 @@
 import './App.css';
+import { AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/routes/Home';
 import Doctor from './components/routes/Doctor';
@@ -41,12 +42,13 @@ const App = () => {
     window.addEventListener('scroll', listenToScroll);
     return () => window.removeEventListener('scroll', listenToScroll);
   });
-
+  const location = useLocation();
   return (
     <>
-      <BrowserRouter>
+      <AnimatePresence>
         <Header isVisible={isVisible} />
-        <Routes>
+
+        <Routes location={location} key={location.key}>
           <Route path="doctor" element={<Doctor />} />
           <Route path="clinics" element={<Clinics />} />
           <Route path="ageGroups" element={<AgeGroups />} />
@@ -66,8 +68,9 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
+
         <Footer />
-      </BrowserRouter>
+      </AnimatePresence>
     </>
   );
 };

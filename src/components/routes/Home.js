@@ -31,10 +31,30 @@ import {
 } from '../styles/Home.styles';
 import PersonHome from '../PersonHome';
 import SocialMediaHome from '../SocialMediaHome';
+import { motion } from 'framer-motion';
 
 const Home = () => {
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+    exit: {
+      opacity: 0,
+      x: -200,
+    },
+  };
+
   return (
-    <StyledMain>
+    <StyledMain
+      as={motion.div}
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <StyledHero>
         <StyledHeroTitle to={'/clinics'}>ΟΡΘΟΔΟΝΤΙΚΑ ΙΑΤΡΕΙΑ</StyledHeroTitle>
         <StyledHeroBtn href={`tel:${contact.phone}`}>210 7659556</StyledHeroBtn>
