@@ -56,7 +56,9 @@ export const StyledContactHeaderSection = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const StyledBottomHeaderSection = styled.div`
