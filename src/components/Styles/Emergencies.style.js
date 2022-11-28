@@ -9,32 +9,50 @@ export const StyledEmergenciesMainSection = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding: 3rem 1rem;
   position: relative;
   top: 180px;
+  padding: 4rem 1rem 5rem 1rem;
+  @media screen and (min-width: 768px) {
+    padding: 3rem 1rem;
+  }
 `;
 
 export const StyledEmergenciesTitle = styled.h1`
-  align-self: start;
-  padding-left: 6rem;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    align-self: start;
+    padding-left: 6rem;
+  }
 `;
 
 export const StyledEmergenciesContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 6rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 3rem 6rem;
+    flex-direction: row;
+  }
 `;
 
 export const StyledEmergenciesInfo = styled.div`
   text-align: justify;
-  padding: 1rem 6rem 0 0;
-  max-width: 60%;
+  max-width: 100%;
+  padding: 2rem 1rem;
+  @media screen and (min-width: 768px) {
+    padding: 1rem 6rem 0 0;
+    max-width: 60%;
+  }
 `;
 
 export const StyledEmergenciesImage = styled.img`
-  max-width: 400px;
   height: auto;
   border-radius: 50%;
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+  }
 `;
