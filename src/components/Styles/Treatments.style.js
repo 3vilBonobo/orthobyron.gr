@@ -31,13 +31,6 @@ export const StyledTreatmentsBottomContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
 `;
-export const StyledTreatmentsLinkContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 4rem;
-`;
 
 export const StyledTreatmentsMainTitle = styled.h1`
   margin: 0 5rem 2rem 10rem;
@@ -66,6 +59,13 @@ export const StyledTreatmentInfoBox = styled.p`
   padding: 1rem 2rem;
 `;
 
+export const StyledTreatmentsLinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 8rem;
+`;
 export const StyledTreatmentsMainLink = styled(Link)`
   text-decoration: none;
   font-size: 1.1rem;
@@ -89,23 +89,24 @@ export const StyledTreatmentsOutletContainer = styled.div`
     min-height: 500px;
   }
 `;
-export const StyledTreatmentSection = styled.div`
+export const StyledTreatmentOutletSection = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   position: relative;
+  height: 500px;
 `;
 
-export const StyledTreatmentLeftContainer = styled.div`
+export const StyledTreatmentOutletLeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
 `;
 
-export const StyledTreatmentImage = styled.img`
+export const StyledTreatmentOutletImage = styled.img`
   border-radius: 50%;
   max-width: 400px;
   height: auto;

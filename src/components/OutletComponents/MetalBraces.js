@@ -1,20 +1,24 @@
 import { treatments } from '../../data/data';
 import {
-  StyledTreatmentSection,
-  StyledTreatmentLeftContainer,
-  StyledTreatmentImage,
+  StyledTreatmentOutletSection,
+  StyledTreatmentOutletLeftContainer,
+  StyledTreatmentOutletImage,
 } from '../styles/Treatments.style';
 import photo from '../../assets/metal.jpg';
 
 const MetalBraces = () => {
   return (
-    <StyledTreatmentSection>
-      <StyledTreatmentLeftContainer>
+    <StyledTreatmentOutletSection>
+      <StyledTreatmentOutletLeftContainer>
         <h1>{treatments[0].name}</h1>
-        <p>{treatments[0].description}</p>
-      </StyledTreatmentLeftContainer>
-      <StyledTreatmentImage src={photo} />
-    </StyledTreatmentSection>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: treatments[0].description,
+          }}
+        ></p>
+      </StyledTreatmentOutletLeftContainer>
+      <StyledTreatmentOutletImage src={photo} />
+    </StyledTreatmentOutletSection>
   );
 };
 

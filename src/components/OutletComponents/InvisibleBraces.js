@@ -1,19 +1,23 @@
 import { treatments } from '../../data/data';
 import {
-  StyledTreatmentSection,
-  StyledTreatmentLeftContainer,
-  StyledTreatmentImage,
+  StyledTreatmentOutletSection,
+  StyledTreatmentOutletLeftContainer,
+  StyledTreatmentOutletImage,
 } from '../styles/Treatments.style';
 import photo from '../../assets/invisible.png';
 const InvisibleBraces = () => {
   return (
-    <StyledTreatmentSection>
-      <StyledTreatmentLeftContainer>
+    <StyledTreatmentOutletSection>
+      <StyledTreatmentOutletLeftContainer>
         <h1>{treatments[1].name}</h1>
-        <p>{treatments[1].description}</p>
-      </StyledTreatmentLeftContainer>
-      <StyledTreatmentImage src={photo} />
-    </StyledTreatmentSection>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: treatments[1].description,
+          }}
+        ></p>
+      </StyledTreatmentOutletLeftContainer>
+      <StyledTreatmentOutletImage src={photo} />
+    </StyledTreatmentOutletSection>
   );
 };
 
