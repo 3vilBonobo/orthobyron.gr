@@ -6,7 +6,7 @@ export const StyledMain = styled.div`
   position: relative;
   top: 180px;
   @media screen and (min-width: 768px) {
-    top: 140px;
+    top: 130px;
   }
 `;
 export const StyledHero = styled.div`
@@ -73,6 +73,8 @@ export const StyledHeroBtn = styled.a`
     z-index: 1;
 
     @media screen and (min-width: 768px) {
+      left: -220px;
+      top: -60px;
       font-size: 1.8rem;
       padding: 2rem 3rem;
       border: 3px solid ${(props) => props.theme.white};

@@ -149,8 +149,6 @@ export const StyledLogo = styled.img`
 
   @media screen and (min-width: 768px) {
     top: 0;
-    width: 80%;
-    height: auto;
   }
 `;
 
