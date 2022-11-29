@@ -184,6 +184,7 @@ export const StyledClinicsCarousels = styled.div`
 `;
 export const StyledWorkHoursSection = styled.section`
   background-color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.darkBlue};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,6 +198,7 @@ export const StyledWorkHoursSection = styled.section`
 
 export const StyledMapSection = styled.section`
   background-color: ${(props) => props.theme.lightGrey};
+  color: ${(props) => props.theme.darkBlue};
   display: flex;
   flex-direction: column;
   align-items: center;

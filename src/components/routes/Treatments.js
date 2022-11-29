@@ -1,40 +1,51 @@
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { treatmentsGeneral, treatments } from '../../data/data';
 
 import {
   StyledTreatmentsMainSection,
+  StyledTreatmentsTopContainer,
+  StyledTreatmentsBottomContainer,
+  StyledTreatmentsLinkContainer,
   StyledTreatmentsMainTitle,
   StyledTreatmentsMainInfo,
-  StyledTreatmentsMainContainer,
+  StyledTreatmentInfoBox,
+  StyledTreatmentsOutletContainer,
   StyledTreatmentsMainLink,
 } from '../styles/Treatments.style';
 
 const Treatments = () => {
-  const location = useLocation();
   return (
     <StyledTreatmentsMainSection>
-      <StyledTreatmentsMainTitle>
-        {treatmentsGeneral.name}
-      </StyledTreatmentsMainTitle>
-      <StyledTreatmentsMainContainer>
-        {treatments.map((item, index) => {
-          return (
-            <StyledTreatmentsMainLink
-              to={item.url2}
-              key={index}
-              state={{ background: location }}
-            >
-              {item.name}
-            </StyledTreatmentsMainLink>
-          );
-        })}
-      </StyledTreatmentsMainContainer>
+      <StyledTreatmentsTopContainer>
+        <StyledTreatmentsMainTitle>
+          {treatmentsGeneral.name}
+        </StyledTreatmentsMainTitle>
+        <StyledTreatmentsMainInfo>
+          {treatmentsGeneral.description.map((item, index) => {
+            return (
+              <StyledTreatmentInfoBox key={index}>
+                {item}
+              </StyledTreatmentInfoBox>
+            );
+          })}
+        </StyledTreatmentsMainInfo>
+      </StyledTreatmentsTopContainer>
 
-      <StyledTreatmentsMainInfo>
-        {treatmentsGeneral.description}
-      </StyledTreatmentsMainInfo>
+      <StyledTreatmentsBottomContainer>
+        <StyledTreatmentsLinkContainer>
+          {treatments.map((item, index) => {
+            return (
+              <StyledTreatmentsMainLink to={item.url2} key={index}>
+                {item.name}
+              </StyledTreatmentsMainLink>
+            );
+          })}
+        </StyledTreatmentsLinkContainer>
 
-      <Outlet />
+        <StyledTreatmentsOutletContainer>
+          <Outlet />
+        </StyledTreatmentsOutletContainer>
+      </StyledTreatmentsBottomContainer>
     </StyledTreatmentsMainSection>
   );
 };

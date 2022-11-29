@@ -83,7 +83,7 @@ export const StyledPhone = styled.a`
   color: #3579a0;
   @media screen and (min-width: 768px) {
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: 0.5s background-color;
     padding-inline: 2rem;
@@ -108,7 +108,7 @@ export const StyledEmail = styled.a`
     display: inline-block;
     text-align: center;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: 0.5s background-color;
     border-radius: 10px;
