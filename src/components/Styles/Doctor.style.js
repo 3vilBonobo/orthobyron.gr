@@ -9,7 +9,7 @@ export const StyledDoctorMainSection = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  padding: 1rem;
+  padding: 4rem 1rem 6rem 1rem;
   position: relative;
   top: 180px;
   @media screen and (min-width: 768px) {
@@ -32,25 +32,58 @@ export const StyledDoctorTitle = styled.h1`
 `;
 
 export const StyledDoctorTopSection = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
+export const StyledDoctorBottomSection = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+export const StyledDoctorBottomLeftContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+`;
+export const StyledDoctorBottomRightContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 `;
 
-export const StyledDoctorBottomSection = styled.div``;
-
 export const StyledDoctorName = styled.h2``;
 
 export const StyledDoctorText = styled.p`
-  padding: 3rem;
   font-size: 1.1rem;
   text-align: justify;
-  line-height: 2rem;
+  padding: 1rem;
+  @media screen and (min-width: 768px) {
+    padding: 3rem;
+    line-height: 2rem;
+  }
 `;
 
 export const StyledDoctorImage = styled.img`
+  margin: 0;
   width: 400px;
   height: auto;
-  margin: 3rem 7rem 3rem 3rem;
+  @media screen and (min-width: 768px) {
+    margin: 3rem 7rem 3rem 3rem;
+  }
 `;

@@ -5,6 +5,8 @@ import {
   StyledDoctorContainer,
   StyledDoctorTopSection,
   StyledDoctorBottomSection,
+  StyledDoctorBottomLeftContainer,
+  StyledDoctorBottomRightContainer,
   StyledDoctorText,
   StyledDoctorName,
   StyledDoctorImage,
@@ -16,11 +18,34 @@ const Doctor = () => {
       <StyledDoctorContainer></StyledDoctorContainer>
       <StyledDoctorName>{personnel.person1.name}</StyledDoctorName>
       <StyledDoctorTopSection>
-        <StyledDoctorText>{personnel.person1.info1}</StyledDoctorText>
+        <StyledDoctorText
+          dangerouslySetInnerHTML={{
+            __html: personnel.person1.info1,
+          }}
+        ></StyledDoctorText>
         <StyledDoctorImage src={personnel.person1.image2} />
       </StyledDoctorTopSection>
       <StyledDoctorBottomSection>
-        <StyledDoctorText>{personnel.person1.info2}</StyledDoctorText>
+        <StyledDoctorBottomLeftContainer>
+          <StyledDoctorText
+            dangerouslySetInnerHTML={{
+              __html: personnel.person1.info2,
+            }}
+          ></StyledDoctorText>
+          <StyledDoctorImage src={personnel.person1.image3} />
+        </StyledDoctorBottomLeftContainer>
+        <StyledDoctorBottomRightContainer>
+          <StyledDoctorText
+            dangerouslySetInnerHTML={{
+              __html: personnel.person1.info3,
+            }}
+          ></StyledDoctorText>
+          <StyledDoctorText
+            dangerouslySetInnerHTML={{
+              __html: personnel.person1.info4,
+            }}
+          ></StyledDoctorText>
+        </StyledDoctorBottomRightContainer>
       </StyledDoctorBottomSection>
     </StyledDoctorMainSection>
   );
