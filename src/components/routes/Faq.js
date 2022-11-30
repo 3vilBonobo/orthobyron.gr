@@ -5,6 +5,7 @@ import {
   StyledFaqTitle,
   StyledFaqContainer,
   StyledFaqInfo,
+  StyledFaqImageContainer,
   StyledFaqImage,
 } from '../styles/Faq.style';
 
@@ -16,6 +17,7 @@ const Faq = () => {
         <StyledFaqInfo>
           <FaqAccordion patients={patients} />
         </StyledFaqInfo>
+        <StyledFaqImageContainer></StyledFaqImageContainer>
         <StyledFaqImage src={patients.faq.image} />
       </StyledFaqContainer>
     </StyledFaqMainSection>

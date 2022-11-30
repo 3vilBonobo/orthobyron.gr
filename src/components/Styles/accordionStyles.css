@@ -1,19 +1,19 @@
 .accordion {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #1e345e;
   border-radius: 2px;
   margin: 2rem;
 }
 
 .accordion__item + .accordion__item {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #1e345e;
   width: 350px;
   @media screen and (min-width: 768px) {
     width: 600px;
   }
 }
 .accordion__button {
-  background-color: #f4f4f4;
-  color: #444;
+  background-color: #3579a0;
+  color: #fff;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -26,10 +26,11 @@
 }
 
 .accordion__button:hover {
-  background-color: #ddd;
+  background-color: #2d6586;
 }
 
 .accordion__button:before {
+  color: #fff;
   display: inline-block;
   content: '';
   height: 10px;
@@ -50,6 +51,7 @@
 }
 
 .accordion__panel {
+  background-color: #e4e8f0;
   padding: 20px;
   animation: fadein 0.35s ease-in;
   width: 350px;

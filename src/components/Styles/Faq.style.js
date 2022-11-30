@@ -9,7 +9,6 @@ export const StyledFaqMainSection = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 100vh;
   padding: 4rem;
   position: relative;
   top: 180px;
@@ -26,17 +25,24 @@ export const StyledFaqTitle = styled.h1`
 export const StyledFaqContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-  width: 100%;
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    height: 600px;
   }
 `;
 
 export const StyledFaqInfo = styled.div`
   @media screen and (min-width: 768px) {
     max-width: 60%;
+  }
+`;
+
+export const StyledFaqImageContainer = styled.div`
+  height: 100%;
+  @media screen and (min-width: 768px) {
+    height: 600px;
   }
 `;
 
