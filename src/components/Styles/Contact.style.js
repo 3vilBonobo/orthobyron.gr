@@ -12,8 +12,10 @@ export const StyledContactMainSection = styled.div`
   padding: 4rem 2rem;
   position: relative;
   top: 180px;
+  padding-block: 1.5rem 3.5rem;
   @media screen and (min-width: 768px) {
-    padding: 1rem;
+    padding-inline: 10rem;
+    top: 140px;
   }
 `;
 

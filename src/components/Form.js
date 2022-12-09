@@ -14,9 +14,21 @@ import {
 } from './styles/Form.style';
 
 const schema = yup.object().shape({
-  name: yup.string().required(),
-  email: yup.string().email().required(),
-  phone: yup.number().positive().integer().required(),
+  name: yup
+    .string()
+    .required('Συμπληρώστε ένα ονοματεπώνυμο')
+    .typeError('Το ονοματεπώνυμο πρέπει να περιέχει μόνο γράμματα'),
+  email: yup
+    .string()
+    .email()
+    .required('Συμπληρώστε ένα σωστό email')
+    .typeError('Συμπληρώστε ένα σωστό email'),
+  phone: yup
+    .number()
+    .positive()
+    .integer()
+    .required()
+    .typeError('Προσθέστε σωστό αριθμό τηλεφώνου'),
 });
 
 const Form = () => {
