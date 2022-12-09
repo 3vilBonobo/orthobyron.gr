@@ -7,22 +7,15 @@
 .accordion__item + .accordion__item {
   border-top: 1px solid #1e345e;
   width: 350px;
-  @media screen and (min-width: 768px) {
-    width: 600px;
-  }
 }
 .accordion__button {
   background-color: #3579a0;
   color: #fff;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
   text-align: left;
   border: none;
   width: 350px;
-  @media screen and (min-width: 768px) {
-    width: 600px;
-  }
 }
 
 .accordion__button:hover {
@@ -55,11 +48,15 @@
   padding: 20px;
   animation: fadein 0.35s ease-in;
   width: 350px;
-  @media screen and (min-width: 768px) {
-    width: 600px;
-  }
 }
 
+@media screen and (min-width: 768px) {
+  .accordion__item + .accordion__item,
+  .accordion__button,
+  .accordion__panel {
+    width: 540px;
+  }
+}
 /* -------------------------------------------------- */
 /* ---------------- Animation part ------------------ */
 /* -------------------------------------------------- */
