@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -19,19 +20,29 @@ const schema = yup.object().shape({
 });
 
 const Form = () => {
-  const { register, handleSubmit, formState } = useForm({
+  const { register, reset, handleSubmit, formState } = useForm({
     resolver: yupResolver(schema),
   });
 
   const { errors } = formState;
 
-  const submitForm = (data) => {
-    console.log(data);
+  const sendEmail = (formData) => {
+    emailjs
+      .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    reset();
   };
   return (
     <StyledFormContainer>
       <StyledFormTitle>Συμπληρώστε τη φόρμα!</StyledFormTitle>
-      <StyledForm onSubmit={handleSubmit(submitForm)}>
+      <StyledForm onSubmit={handleSubmit(sendEmail)}>
         <StyledFormInput
           type="text"
           name="name"
