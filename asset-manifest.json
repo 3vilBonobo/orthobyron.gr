@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/orthobyron.gr/static/css/main.c0e29135.css",
+    "main.js": "/orthobyron.gr/static/js/main.bbee1fb7.js",
+    "static/media/salon1.jpg": "/orthobyron.gr/static/media/salon1.685ecd050c3335873cc8.jpg",
+    "static/media/tongue.jpg": "/orthobyron.gr/static/media/tongue.e39846fdab4abd45f7a3.jpg",
+    "static/media/invisible.png": "/orthobyron.gr/static/media/invisible.ccc9316f9473c2739eb0.png",
+    "static/media/bannerPdf.pdf": "/orthobyron.gr/static/media/bannerPdf.5d5b554cd9b31abf60a1.pdf",
+    "static/media/orizontio2.jpg": "/orthobyron.gr/static/media/orizontio2.4377d81e03789bbed384.jpg",
+    "static/media/moving.jpg": "/orthobyron.gr/static/media/moving.a02efe4f48c5751b505c.jpg",
+    "static/media/metal.jpg": "/orthobyron.gr/static/media/metal.f6c30fa0576c6225ec62.jpg",
+    "static/media/espaEKT.jpg": "/orthobyron.gr/static/media/espaEKT.69eb96d12937ac8fb45f.jpg",
+    "static/media/invisalign.jpg": "/orthobyron.gr/static/media/invisalign.0d23abee114843613e98.jpg",
+    "static/media/logo.png": "/orthobyron.gr/static/media/logo.989382f0c53a967694b0.png",
+    "index.html": "/orthobyron.gr/index.html",
+    "main.c0e29135.css.map": "/orthobyron.gr/static/css/main.c0e29135.css.map",
+    "main.bbee1fb7.js.map": "/orthobyron.gr/static/js/main.bbee1fb7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0e29135.css",
+    "static/js/main.bbee1fb7.js"
+  ]
+}
