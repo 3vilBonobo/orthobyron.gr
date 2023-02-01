@@ -81,7 +81,7 @@ export const StyledMenuArrow = styled(AiFillCaretDown)`
 `;
 
 export const StyledLinkAndMenuContainer = styled.ul`
-  width: 100%;
+  max-width: 100%;
   @media screen and (min-width: 768px) {
     width: fit-content;
   }

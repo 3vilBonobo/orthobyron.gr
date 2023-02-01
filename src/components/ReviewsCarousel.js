@@ -1,81 +1,53 @@
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React, { Component } from 'react';
+import Slider from 'react-slick';
+import '../../node_modules/slick-carousel/slick/slick.css';
+import '../../node_modules/slick-carousel/slick/slick-theme.css';
+import Review from './Review';
 import { reviews } from '../data/data';
-import { Carousel } from 'react-responsive-carousel';
-import { BsStarFill } from 'react-icons/bs';
-import { FaCircle } from 'react-icons/fa';
-import {
-  StyledReviewsCarouselWrapper,
-  StyledReviewsCarouselContainer,
-  StyledReviewsCarouselReview,
-  StyledReviewsCarouselName,
-  StyledReviewsCarouselSource,
-} from './styles/Carousels.style';
+export default class ReviewsCarousel extends Component {
+  render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      initialSlide: 0,
+      draggable: true,
 
-const ReviewsCarousel = () => {
-  return (
-    <StyledReviewsCarouselContainer>
-      <Carousel
-        showArrows
-        autoPlay
-        showStatus={false}
-        transitionTime={2000}
-        showThumbs={false}
-        swipeable={true}
-        renderIndicator={(onClickHandler, isSelected, index, label) => {
-          const defStyle = {
-            margin: 5,
-            color: '#b3b3b3',
-            cursor: 'pointer',
-          };
-          const style = isSelected
-            ? { ...defStyle, color: ' #595959' }
-            : { ...defStyle };
-          return (
-            <span
-              style={style}
-              onClick={onClickHandler}
-              onKeyDown={onClickHandler}
-              value={index}
-              key={index}
-              role="button"
-              tabIndex={0}
-              aria-label={`${label} ${index + 1}`}
-            >
-              <FaCircle />
-            </span>
-          );
-        }}
-      >
-        {reviews.map((review, index) => {
-          return (
-            <StyledReviewsCarouselWrapper key={index}>
-              <StyledReviewsCarouselReview
-                dangerouslySetInnerHTML={{
-                  __html: review.review,
-                }}
-              ></StyledReviewsCarouselReview>
-
-              <div>
-                <BsStarFill />
-                <BsStarFill />
-                <BsStarFill />
-                <BsStarFill />
-                <BsStarFill />
-              </div>
-              <div>
-                <StyledReviewsCarouselName>
-                  {review.name}
-                </StyledReviewsCarouselName>
-                <StyledReviewsCarouselSource>
-                  Πηγή: {review.source}
-                </StyledReviewsCarouselSource>
-              </div>
-            </StyledReviewsCarouselWrapper>
-          );
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
+    return (
+      <Slider {...settings}>
+        {reviews.map((item, index) => {
+          return <Review item={item} key={index} />;
         })}
-      </Carousel>
-    </StyledReviewsCarouselContainer>
-  );
-};
-
-export default ReviewsCarousel;
+      </Slider>
+    );
+  }
+}

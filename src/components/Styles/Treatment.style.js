@@ -15,7 +15,7 @@ export const StyledTreatmentContainer = styled.div`
 `;
 
 export const StyledTreatmentImage = styled.img`
-  width: 100%;
+  max-width: 100%;
   height: fit-content;
   opacity: 0.4;
   transition: transform 0.5s;

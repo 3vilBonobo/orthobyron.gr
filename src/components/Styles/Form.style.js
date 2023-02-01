@@ -12,7 +12,9 @@ export const StyledForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  max-width: 500px;
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
 `;
 export const StyledFormTitle = styled.h2``;
 
@@ -25,16 +27,22 @@ export const StyledFormInput = styled.input`
 `;
 export const StyledFormSelect = styled.select`
   font-size: 1.2rem;
-  min-width: 400px;
+  min-width: 350px;
   padding: 1rem 2rem;
   margin-block: 1rem 2rem;
+  @media screen and (min-width: 768px) {
+    min-width: 400px;
+  }
 `;
 
 export const StyledFormOption = styled.option`
   font-size: 1.2rem;
-  min-width: 400px;
+  min-width: 350px;
   padding: 1rem 2rem;
   margin-block: 1rem 2rem;
+  @media screen and (min-width: 768px) {
+    min-width: 400px;
+  }
 `;
 
 export const StyledFormBtn = styled.button`

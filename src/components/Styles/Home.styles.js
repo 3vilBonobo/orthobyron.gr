@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledMain = styled.div`
-  width: 100%;
+  /* max-width: 100%; */
   position: relative;
   top: 180px;
   @media screen and (min-width: 768px) {
@@ -10,7 +10,7 @@ export const StyledMain = styled.div`
   }
 `;
 export const StyledHero = styled.div`
-  width: 100%;
+  /* max-width: 100%; */
   position: relative;
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@ export const StyledHeroBtn = styled.a`
 `;
 
 export const StyledHeroImg = styled.img`
-  width: 100%;
+  max-width: 100%;
   height: auto;
 `;
 
@@ -109,12 +109,13 @@ export const StyledIntroContainer = styled.div`
 `;
 
 export const StyledReviewsSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   background-color: ${(props) => props.theme.white};
   color: #1e345e;
+  padding: 1rem 1.2rem;
+  @media screen and (min-width: 768px) {
+    padding: 5rem 10rem;
+  }
 `;
 
 export const StyledTreatmentsSection = styled.section`
@@ -148,7 +149,7 @@ export const StyledInfoText = styled.p`
   }
 `;
 export const StyledCTASection = styled.section`
-  width: 100%;
+  max-width: 100%;
   background-color: ${(props) => props.theme.white};
   display: flex;
   flex-direction: column;
@@ -162,12 +163,12 @@ export const StyledClinicsSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
 `;
 
 export const StyledClinicsTitle = styled.h2`
   display: block;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   background-color: ${(props) => props.theme.lightCyan};
   padding: 3rem;
@@ -191,7 +192,7 @@ export const StyledWorkHoursSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   padding: 2.5rem 1rem;
   @media screen and (min-width: 768px) {
     padding: 3rem 1rem;
@@ -205,7 +206,7 @@ export const StyledMapSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   padding: 3rem 1rem;
   @media screen and (min-width: 768px) {
     padding: 3rem 1rem;
@@ -219,7 +220,7 @@ export const StyledMapWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   padding: 1rem;
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -234,11 +235,11 @@ export const StyledPersonnelSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   padding: 3rem 1rem;
 `;
 
 export const StyledSocialsSection = styled.section`
-  width: 100%;
+  max-width: 100%;
   background-color: ${(props) => props.theme.lightBlue};
 `;

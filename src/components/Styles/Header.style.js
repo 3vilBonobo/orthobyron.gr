@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledHeader = styled.header`
-  width: 100%;
   background-color: ${(props) => props.theme.white};
   display: flex;
   flex-direction: column;
@@ -11,16 +10,18 @@ export const StyledHeader = styled.header`
   position: fixed;
   z-index: 10;
   top: 0;
+
+  padding-inline: 0.5rem;
   @media screen and (min-width: 768px) {
     background-color: ${(props) => props.theme.darkBlue};
   }
 `;
 
 export const StyledBanner = styled.div`
-  width: auto;
+  /* max-width: 100%; */
   @media screen and (min-width: 768px) {
     width: 30%;
-    min-width: 300px;
+    /* min-width: 300px; */
     align-self: flex-start;
   }
 `;
@@ -30,10 +31,11 @@ export const StyledBannerLink = styled.a`
 `;
 
 export const StyledBannerTop = styled.img`
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   @media screen and (min-width: 768px) {
-    width: 50%;
-    min-width: 400px;
+    /* width: 50%;
+    min-width: 400px; */
     align-self: flex-start;
   }
 `;
@@ -56,8 +58,8 @@ export const StyledContactHeaderSection = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  /* max-width: 100%; */
   @media screen and (min-width: 768px) {
-    width: 100%;
   }
 `;
 
@@ -69,12 +71,12 @@ export const StyledBottomHeaderSection = styled.div`
   justify-content: space-between;
   color: ${(props) => props.theme.white};
   @media screen and (min-width: 768px) {
-    width: 100%;
+    max-width: 100%;
   }
 `;
 
 export const StyledPhone = styled.a`
-  min-width: 200px;
+  /* max-width: 200px; */
   text-align: center;
   display: inline-block;
   font-weight: 600;
@@ -136,14 +138,14 @@ export const StyledCTA = styled(Link)`
   @media screen and (min-width: 768px) {
     height: 3rem;
     align-self: center;
-    width: 250px;
+    max-width: 250px;
     border-radius: 10px;
     padding: 1.2rem 1.2rem 2.4rem 1.2rem;
   }
 `;
 
 export const StyledLogo = styled.img`
-  width: 60%;
+  max-width: 60%;
   min-width: 250px;
   height: auto;
 

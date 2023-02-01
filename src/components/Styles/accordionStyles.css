@@ -47,7 +47,7 @@
   background-color: #e4e8f0;
   padding: 20px;
   animation: fadein 0.35s ease-in;
-  width: 350px;
+  max-width: 350px;
 }
 
 @media screen and (min-width: 768px) {
