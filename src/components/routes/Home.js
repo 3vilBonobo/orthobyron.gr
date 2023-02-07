@@ -64,10 +64,10 @@ const Home = () => {
       </StyledCTASection>
       <StyledClinicsSection>
         <StyledClinicsTitle>ΤΑ ΙΑΤΡΕΙΑ ΜΑΣ</StyledClinicsTitle>
-        {/* <StyledClinicsCarousels>
+        <StyledClinicsCarousels>
           <ClinicsCarousel clinic={clinicsImages.byron} />
           <ClinicsCarousel clinic={clinicsImages.piraeus} />
-        </StyledClinicsCarousels> */}
+        </StyledClinicsCarousels>
       </StyledClinicsSection>
 
       <StyledPersonnelSection>

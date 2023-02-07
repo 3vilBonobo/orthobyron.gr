@@ -177,10 +177,12 @@ export const StyledClinicsTitle = styled.h2`
 `;
 
 export const StyledClinicsCarousels = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding: 3rem 1rem;
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }

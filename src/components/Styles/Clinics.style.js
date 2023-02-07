@@ -52,3 +52,14 @@ export const StyledClinicsInfo = styled.div`
   margin-bottom: 2rem;
   line-height: 2rem;
 `;
+
+export const StyledClinicsCarouselSection = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;

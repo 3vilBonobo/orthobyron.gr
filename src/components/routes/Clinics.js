@@ -1,14 +1,14 @@
 import { iatreia, clinicsImages } from '../../data/data';
 import ClinicsCarousel from '../ClinicsCarousel';
-import { StyledClinicsCarousels } from '../styles/Home.styles';
 import {
   StyledClinicsMainSection,
   StyledClinicsTitle,
   StyledClinicsText,
   StyledClinicsInfoWrapper,
   StyledClinicsInfo,
+  StyledClinicsCarouselSection,
 } from '../styles/Clinics.style';
-
+import { StyledClinicsCarouselWrapper } from '../styles/ClinicsCarousel.style';
 const Clinics = () => {
   return (
     <StyledClinicsMainSection>
@@ -30,10 +30,10 @@ const Clinics = () => {
           }}
         ></StyledClinicsInfo>
       </StyledClinicsInfoWrapper>
-      <StyledClinicsCarousels>
+      <StyledClinicsCarouselSection>
         <ClinicsCarousel clinic={clinicsImages.byron} />
         <ClinicsCarousel clinic={clinicsImages.piraeus} />
-      </StyledClinicsCarousels>
+      </StyledClinicsCarouselSection>
     </StyledClinicsMainSection>
   );
 };
