@@ -39,4 +39,6 @@ export const StyledMapTitle = styled.h2`
   padding: 1rem 0.5rem;
   align-self: center;
 `;
-export const StyledMapText = styled.p``;
+export const StyledMapText = styled.p`
+  text-align: center;
+`;
