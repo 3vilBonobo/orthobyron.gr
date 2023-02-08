@@ -157,6 +157,20 @@ export const StyledCTASection = styled.section`
   justify-content: center;
 `;
 
+export const StyledVideoSection = styled.section`
+  max-width: 100%;
+  background-color: ${(props) => props.theme.white};
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0.5rem;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding: 3rem;
+  }
+`;
+
 export const StyledClinicsSection = styled.section`
   background-color: ${(props) => props.theme.white};
   display: flex;

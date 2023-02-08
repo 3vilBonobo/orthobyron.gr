@@ -27,7 +27,6 @@ export default class ClinicsCarousel extends Component {
           {this.props.clinic.title}
         </StyledClinicsCarouselTitle>
         <Slider {...settings}>
-          {console.log(this.props.clinic.images)}
           {this.props.clinic.images.map((item, index) => {
             return (
               <StyledClinicsCarouselImageWrapper key={index}>

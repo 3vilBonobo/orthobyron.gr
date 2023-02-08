@@ -1,10 +1,10 @@
 import Salon1 from '../../assets/salon1.jpg';
-
 import Treatment from '../Treatment';
 import { contact, intro, addresses, clinicsImages } from '../../data/data';
 import ReviewsCarousel from '../ReviewsCarousel';
 import CTAButton from '../CTAButton';
 import { StyledAppointmentBtn } from '../styles/CTAButton.styles';
+import YoutubeEmbed from '../YoutubeEmbed';
 import ClinicsCarousel from '../ClinicsCarousel';
 import WorkHours from '../WorkHours';
 import Map from '../Map';
@@ -21,6 +21,7 @@ import {
   StyledTreatmentsTitle,
   StyledInfoText,
   StyledCTASection,
+  StyledVideoSection,
   StyledClinicsSection,
   StyledClinicsTitle,
   StyledClinicsCarousels,
@@ -57,11 +58,14 @@ const Home = () => {
         <StyledInfoText>
           Τα ιατρεία μας προσφέρουν τις υπηρεσίες τους σε ενήλικες και παιδιά
         </StyledInfoText>
-
         <StyledAppointmentBtn to={'/contact'}>
           <CTAButton text={'ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ'} />
         </StyledAppointmentBtn>
       </StyledCTASection>
+      <StyledVideoSection>
+        <YoutubeEmbed embedId="bQEEh-zqTGI" />
+        <YoutubeEmbed embedId="LC5_1dMmPoY" />
+      </StyledVideoSection>
       <StyledClinicsSection>
         <StyledClinicsTitle>ΤΑ ΙΑΤΡΕΙΑ ΜΑΣ</StyledClinicsTitle>
         <StyledClinicsCarousels>
