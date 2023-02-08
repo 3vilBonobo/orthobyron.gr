@@ -18,10 +18,10 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledBanner = styled.div`
-  /* max-width: 100%; */
+  max-width: 100%;
   @media screen and (min-width: 768px) {
     width: 30%;
-    /* min-width: 300px; */
+    min-width: 300px;
     align-self: flex-start;
   }
 `;
@@ -34,8 +34,8 @@ export const StyledBannerTop = styled.img`
   max-width: 100%;
   height: auto;
   @media screen and (min-width: 768px) {
-    /* width: 50%;
-    min-width: 400px; */
+    width: 50%;
+    min-width: 400px;
     align-self: flex-start;
   }
 `;
@@ -58,9 +58,8 @@ export const StyledContactHeaderSection = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* max-width: 100%; */
-  @media screen and (min-width: 768px) {
-  }
+  width: 100%;
+  padding-inline: 0.5rem;
 `;
 
 export const StyledBottomHeaderSection = styled.div`
@@ -69,6 +68,7 @@ export const StyledBottomHeaderSection = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   color: ${(props) => props.theme.white};
   @media screen and (min-width: 768px) {
     max-width: 100%;
