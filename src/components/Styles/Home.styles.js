@@ -222,10 +222,14 @@ export const StyledMapSection = styled.section`
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 7rem 1rem;
   @media screen and (min-width: 768px) {
-    padding: 3rem 1rem;
+    padding: 5rem 1rem;
   }
+`;
+
+export const StyledMapHomeTitle = styled.h2`
+  padding-bottom: 3rem;
 `;
 
 export const StyledMapWrapper = styled.section`
@@ -236,11 +240,10 @@ export const StyledMapWrapper = styled.section`
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  padding: 1rem;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
   }
 `;
 

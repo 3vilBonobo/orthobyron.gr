@@ -324,11 +324,15 @@ export const addresses = [
     address: 'Φλέμινγκ 62, Βύρωνας',
     phone: '210 7659556',
     email: 'orthobyron@gmail.com',
+    mapSource:
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.896991373951!2d23.759493815016658!3d37.95619110947465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd7d360b3909%3A0x865a99e4db2d1cfc!2sFlemigk%2062%2C%20Vironas%20162%2033!5e0!3m2!1sen!2sgr!4v1675849050593!5m2!1sen!2sgr',
   },
   {
     title: 'Ιατρείο Πειραιά',
     address: 'Ηρώων Πολυτεχνείου 55-57, Πειραιάς (Εμπορικό Κέντρο ΤΕΡΨΙΘΕΑ)',
     phone: '210 4296562',
     email: 'orthopiraeus@gmail.com',
+    mapSource:
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.5438405594227!2d23.64334171501623!3d37.941085810347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bbe7e1b74971%3A0x5a2bfc436126bfcd!2sLeof.%20Ir.%20Politechniou%2055-57%2C%20Pireas%20185%2035!5e0!3m2!1sen!2sgr!4v1675849266352!5m2!1sen!2sgr',
   },
 ];

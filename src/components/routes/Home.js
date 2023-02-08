@@ -27,6 +27,7 @@ import {
   StyledClinicsCarousels,
   StyledWorkHoursSection,
   StyledMapSection,
+  StyledMapHomeTitle,
   StyledMapWrapper,
   StyledPersonnelSection,
   StyledSocialsSection,
@@ -86,7 +87,8 @@ const Home = () => {
       </StyledWorkHoursSection>
 
       <StyledMapSection>
-        <h2>ΔΙΕΥΘΥΝΣΗ</h2>
+        <StyledMapHomeTitle>ΔΙΕΥΘΥΝΣΗ</StyledMapHomeTitle>
+
         <StyledMapWrapper>
           {addresses.map((item, index) => {
             return <Map addresses={item} key={index} />;
