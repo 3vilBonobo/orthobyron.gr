@@ -8,6 +8,7 @@ export default class ReviewsCarousel extends Component {
   render() {
     var settings = {
       dots: true,
+      arrows: false,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
