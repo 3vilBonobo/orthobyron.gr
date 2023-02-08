@@ -168,7 +168,7 @@ export const StyledClinicsSection = styled.section`
 
 export const StyledClinicsTitle = styled.h2`
   display: block;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
   background-color: ${(props) => props.theme.lightCyan};
   padding: 3rem;

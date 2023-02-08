@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
   position: fixed;
   z-index: 10;
   top: 0;
-
+  width: 100%;
   padding-inline: 0.5rem;
   @media screen and (min-width: 768px) {
     background-color: ${(props) => props.theme.darkBlue};

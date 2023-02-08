@@ -35,7 +35,7 @@ export const StyledCloseIcon = styled(MdClose)`
 export const StyledNavbarContainer = styled.nav`
   z-index: 9;
   height: 580px;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.theme.darkBlue};
