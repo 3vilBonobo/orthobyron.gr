@@ -10,9 +10,59 @@ export const StyledMain = styled.div`
   }
 `;
 export const StyledHero = styled.div`
-  /* max-width: 100%; */
+  width: 100%;
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const StyledOverlay = styled.div`
+  background: -moz-linear-gradient(
+    251deg,
+    rgba(194, 226, 244, 1) 0%,
+    rgba(194, 226, 244, 1) 1%,
+    rgba(36, 30, 78, 1) 99%,
+    rgba(35, 28, 77, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    251deg,
+    rgba(194, 226, 244, 1) 0%,
+    rgba(194, 226, 244, 1) 1%,
+    rgba(36, 30, 78, 1) 99%,
+    rgba(35, 28, 77, 1) 100%
+  );
+  background: -o-linear-gradient(
+    251deg,
+    rgba(194, 226, 244, 1) 0%,
+    rgba(194, 226, 244, 1) 1%,
+    rgba(36, 30, 78, 1) 99%,
+    rgba(35, 28, 77, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    251deg,
+    rgba(194, 226, 244, 1) 0%,
+    rgba(194, 226, 244, 1) 1%,
+    rgba(36, 30, 78, 1) 99%,
+    rgba(35, 28, 77, 1) 100%
+  );
+  background: linear-gradient(
+    199deg,
+    rgba(194, 226, 244, 1) 0%,
+    rgba(194, 226, 244, 1) 1%,
+    rgba(36, 30, 78, 1) 99%,
+    rgba(35, 28, 77, 1) 100%
+  );
+  opacity: 0.5;
+  position: absolute;
+  top: -100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
@@ -25,18 +75,20 @@ export const StyledHeroTitle = styled(Link)`
   color: ${(props) => props.theme.white};
   text-shadow: 2px 2px 6px rgba(30, 3, 33, 0.99),
     -4px -3px 7px rgba(30, 3, 33, 0.99);
-
+  opacity: 1;
+  font-size: 2rem;
   @media screen and (min-width: 768px) {
-    top: 15rem;
-    font-size: 3.5rem;
+    top: 11rem;
+    font-size: 4rem;
   }
 `;
 
 export const StyledHeroBtn = styled.a`
   overflow: hidden;
   position: absolute;
+  top: 15rem;
   color: ${(props) => props.theme.white};
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 2rem 3rem;
   text-decoration: none;
   border: 3px solid ${(props) => props.theme.white};
@@ -70,21 +122,23 @@ export const StyledHeroBtn = styled.a`
     transform: rotate(35deg);
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 50px;
-    z-index: 1;
-
-    @media screen and (min-width: 768px) {
-      left: -220px;
-      top: -60px;
-      font-size: 1.8rem;
-      padding: 2rem 3rem;
-      border: 3px solid ${(props) => props.theme.white};
-    }
+    z-index: 2;
+  }
+  @media screen and (min-width: 768px) {
+    top: 20rem;
   }
 `;
 
-export const StyledHeroImg = styled.img`
-  max-width: 100%;
-  height: auto;
+export const StyledHeroVideo = styled.video`
+  width: 100%;
+  height: 80vh;
+  object-fit: none;
+  position: relative;
+  top: -100px;
+  @media screen and (min-width: 768px) {
+    object-fit: cover;
+    height: auto;
+  }
 `;
 
 export const StyledIntroSection = styled.section`
@@ -112,7 +166,7 @@ export const StyledReviewsSection = styled.section`
   width: 100%;
   background-color: ${(props) => props.theme.white};
   color: #1e345e;
-  padding: 1rem 1.2rem;
+  padding: 5rem 1.2rem;
   @media screen and (min-width: 768px) {
     padding: 5rem 10rem;
   }
@@ -196,10 +250,27 @@ export const StyledClinicsCarousels = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 2rem;
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
 `;
+
+export const StyledPersonnelSection = styled.section`
+  background-color: ${(props) => props.theme.lightGrey};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 3rem 1rem;
+`;
+
+export const StyledSocialsSection = styled.section`
+  max-width: 100%;
+  background-color: ${(props) => props.theme.lightBlue};
+`;
+
 export const StyledWorkHoursSection = styled.section`
   background-color: ${(props) => props.theme.white};
   color: ${(props) => props.theme.darkBlue};
@@ -229,7 +300,7 @@ export const StyledMapSection = styled.section`
 `;
 
 export const StyledMapHomeTitle = styled.h2`
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 `;
 
 export const StyledMapWrapper = styled.section`
@@ -245,19 +316,4 @@ export const StyledMapWrapper = styled.section`
     flex-direction: row;
     align-items: center;
   }
-`;
-
-export const StyledPersonnelSection = styled.section`
-  background-color: ${(props) => props.theme.lightGrey};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  padding: 3rem 1rem;
-`;
-
-export const StyledSocialsSection = styled.section`
-  max-width: 100%;
-  background-color: ${(props) => props.theme.lightBlue};
 `;

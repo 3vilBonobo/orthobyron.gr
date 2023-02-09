@@ -1,4 +1,4 @@
-import Salon1 from '../../assets/salon1.jpg';
+import IntroVideo from '../../assets/orthobyron-vid.mp4';
 import Treatment from '../Treatment';
 import { contact, intro, addresses, clinicsImages } from '../../data/data';
 import ReviewsCarousel from '../ReviewsCarousel';
@@ -11,8 +11,9 @@ import Map from '../Map';
 import {
   StyledMain,
   StyledHero,
+  StyledOverlay,
   StyledHeroTitle,
-  StyledHeroImg,
+  StyledHeroVideo,
   StyledHeroBtn,
   StyledIntroSection,
   StyledIntroContainer,
@@ -39,9 +40,12 @@ const Home = () => {
   return (
     <StyledMain>
       <StyledHero>
+        <StyledHeroVideo type="video/mp4" autoPlay loop>
+          <source src={IntroVideo} />
+        </StyledHeroVideo>
+        <StyledOverlay></StyledOverlay>
         <StyledHeroTitle to={'/clinics'}>ΟΡΘΟΔΟΝΤΙΚΑ ΙΑΤΡΕΙΑ</StyledHeroTitle>
         <StyledHeroBtn href={`tel:${contact.phone}`}>210 7659556</StyledHeroBtn>
-        <StyledHeroImg src={Salon1} alt="" />
       </StyledHero>
 
       <StyledIntroSection>

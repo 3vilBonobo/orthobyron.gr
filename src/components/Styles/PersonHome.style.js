@@ -7,7 +7,7 @@ export const StyledPersonHomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding-block: 2rem;
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
@@ -54,7 +54,7 @@ export const StyledPersonProfession = styled.p`
 `;
 
 export const StyledPersonHomeText = styled.p`
-  padding: 1rem;
+  padding: 2rem 1rem;
   text-align: justify;
   @media screen and (min-width: 768px) {
     padding: 4rem;

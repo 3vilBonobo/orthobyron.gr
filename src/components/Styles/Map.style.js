@@ -36,7 +36,7 @@ export const StyledMapInfo = styled.div`
   flex-direction: column;
 `;
 export const StyledMapTitle = styled.h2`
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
   align-self: center;
 `;
 export const StyledMapText = styled.p`
