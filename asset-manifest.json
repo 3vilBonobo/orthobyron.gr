@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/orthobyron.gr/static/css/main.c0e29135.css",
-    "main.js": "/orthobyron.gr/static/js/main.f6b3ba10.js",
-    "static/media/salon1.jpg": "/orthobyron.gr/static/media/salon1.685ecd050c3335873cc8.jpg",
+    "main.css": "/orthobyron.gr/static/css/main.4b12267d.css",
+    "main.js": "/orthobyron.gr/static/js/main.f57c000f.js",
+    "static/media/orthobyron-vid.mp4": "/orthobyron.gr/static/media/orthobyron-vid.18dc9d16e177a6c52a13.mp4",
     "static/media/tongue.jpg": "/orthobyron.gr/static/media/tongue.e39846fdab4abd45f7a3.jpg",
     "static/media/invisible.png": "/orthobyron.gr/static/media/invisible.ccc9316f9473c2739eb0.png",
     "static/media/bannerPdf.pdf": "/orthobyron.gr/static/media/bannerPdf.5d5b554cd9b31abf60a1.pdf",
@@ -12,12 +12,16 @@
     "static/media/espaEKT.jpg": "/orthobyron.gr/static/media/espaEKT.69eb96d12937ac8fb45f.jpg",
     "static/media/invisalign.jpg": "/orthobyron.gr/static/media/invisalign.0d23abee114843613e98.jpg",
     "static/media/logo.png": "/orthobyron.gr/static/media/logo.989382f0c53a967694b0.png",
+    "static/media/slick.svg": "/orthobyron.gr/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/orthobyron.gr/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/orthobyron.gr/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/orthobyron.gr/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/orthobyron.gr/index.html",
-    "main.c0e29135.css.map": "/orthobyron.gr/static/css/main.c0e29135.css.map",
-    "main.f6b3ba10.js.map": "/orthobyron.gr/static/js/main.f6b3ba10.js.map"
+    "main.4b12267d.css.map": "/orthobyron.gr/static/css/main.4b12267d.css.map",
+    "main.f57c000f.js.map": "/orthobyron.gr/static/js/main.f57c000f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0e29135.css",
-    "static/js/main.f6b3ba10.js"
+    "static/css/main.4b12267d.css",
+    "static/js/main.f57c000f.js"
   ]
 }
