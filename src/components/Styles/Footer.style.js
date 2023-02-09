@@ -68,10 +68,22 @@ export const StyledFooterAddressText = styled.p``;
 export const StyledFooterAddressPhone = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.brightCyan};
+  transition: color 0.4s;
+  :hover,
+  :active,
+  :focus {
+    color: ${(props) => props.theme.lightCyan};
+  }
 `;
 export const StyledFooterAddressEmail = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.brightCyan};
+  transition: color 0.4s;
+  :hover,
+  :active,
+  :focus {
+    color: ${(props) => props.theme.lightCyan};
+  }
 `;
 
 export const StyledFooterSocial = styled.div``;
@@ -99,5 +111,12 @@ export const StyledAttribution = styled.div`
 
 export const StyledAttrLinks = styled.a`
   color: ${(props) => props.theme.brightCyan};
+  transition: color 0.4s;
+  :hover,
+  :active,
+  :focus {
+    color: ${(props) => props.theme.lightCyan};
+  }
+
   text-decoration: none;
 `;

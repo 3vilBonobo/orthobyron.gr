@@ -18,7 +18,14 @@ export const StyledSocialLink = styled.a`
 
 export const StyledFacebookHome = styled(BsFacebook)`
   color: ${(props) => props.theme.white};
+  transition: color ease-in-out 0.5s;
   font-size: 3rem;
+  :hover,
+  :active,
+  :focus {
+    color: ${(props) => props.theme.darkBlue};
+    transition: color ease-in-out 0.5s;
+  }
   @media screen and (min-width: 768px) {
     font-size: 4rem;
   }
@@ -27,6 +34,14 @@ export const StyledFacebookHome = styled(BsFacebook)`
 export const StyledMailHome = styled(MdMail)`
   color: ${(props) => props.theme.white};
   font-size: 4rem;
+  transition: color ease-in-out 0.5s;
+  font-size: 3rem;
+  :hover,
+  :active,
+  :focus {
+    color: ${(props) => props.theme.darkBlue};
+    transition: color ease-in-out 0.4s;
+  }
   @media screen and (min-width: 768px) {
     font-size: 5rem;
   }
@@ -34,6 +49,14 @@ export const StyledMailHome = styled(MdMail)`
 export const StyledPhoneHome = styled(BsFillTelephoneFill)`
   color: ${(props) => props.theme.white};
   font-size: 3rem;
+  transition: color ease-in-out 0.4s;
+  font-size: 3rem;
+  :hover,
+  :active,
+  :focus {
+    color: ${(props) => props.theme.darkBlue};
+    transition: color ease-in-out 0.4s;
+  }
   @media screen and (min-width: 768px) {
     font-size: 4rem;
   }
