@@ -1,6 +1,13 @@
 import IntroVideo from '../../assets/orthobyron-vid.mp4';
 import Treatment from '../Treatment';
-import { contact, intro, addresses, clinicsImages } from '../../data/data';
+import {
+  contact,
+  intro,
+  addresses,
+  heroImages,
+  clinicsImages,
+} from '../../data/data';
+import HeroCarousel from '../HeroCarousel';
 import ReviewsCarousel from '../ReviewsCarousel';
 import CTAButton from '../CTAButton';
 import { StyledAppointmentBtn } from '../styles/CTAButton.styles';
@@ -11,9 +18,7 @@ import Map from '../Map';
 import {
   StyledMain,
   StyledHero,
-  StyledOverlay,
   StyledHeroTitle,
-  StyledHeroVideo,
   StyledHeroBtn,
   StyledIntroSection,
   StyledIntroContainer,
@@ -40,10 +45,7 @@ const Home = () => {
   return (
     <StyledMain>
       <StyledHero>
-        <StyledHeroVideo type="video/mp4" autoPlay loop>
-          <source src={IntroVideo} />
-        </StyledHeroVideo>
-        <StyledOverlay></StyledOverlay>
+        <HeroCarousel clinic={heroImages} />
         <StyledHeroTitle to={'/clinics'}>ΟΡΘΟΔΟΝΤΙΚΑ ΙΑΤΡΕΙΑ</StyledHeroTitle>
         <StyledHeroBtn href={`tel:${contact.phone}`}>210 7659556</StyledHeroBtn>
       </StyledHero>

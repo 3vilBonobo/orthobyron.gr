@@ -31,8 +31,10 @@ const Clinics = () => {
         ></StyledClinicsInfo>
       </StyledClinicsInfoWrapper>
       <StyledClinicsCarouselSection>
-        <ClinicsCarousel clinic={clinicsImages.byron} />
-        <ClinicsCarousel clinic={clinicsImages.piraeus} />
+        <StyledClinicsCarouselWrapper>
+          <ClinicsCarousel clinic={clinicsImages.byron} />
+          <ClinicsCarousel clinic={clinicsImages.piraeus} />
+        </StyledClinicsCarouselWrapper>
       </StyledClinicsCarouselSection>
     </StyledClinicsMainSection>
   );

@@ -1,3 +1,5 @@
+// import { useEffect } from 'react';
+// import { useLocation } from 'react-router-dom';
 import {
   StyledBurgerIcon,
   StyledCloseIcon,
@@ -13,6 +15,10 @@ const Navbar = () => {
   const ShowSidebar = () => {
     setSidebar(!sidebar);
   };
+  // const { pathname } = useLocation();
+  // useEffect(() => {
+  //   setSidebar(false);
+  // }, [pathname]);
 
   return (
     <>

@@ -82,13 +82,3 @@ const App = () => {
 };
 
 export default App;
-
-// {/* <div className="App">
-//   <header className="App-header">Hello World</header>
-//   {/* <div
-//         dangerouslySetInnerHTML={{
-//           __html: therapies.therapyTypes.therapy1.info.description,
-//         }}
-//       ></div> */}
-//   <Footer />
-// </div>; */}

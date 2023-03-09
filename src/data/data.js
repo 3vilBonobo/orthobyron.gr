@@ -63,6 +63,18 @@ export const menuItemsData = [
   },
 ];
 
+export const heroImages = [
+  'images/hero-img_1.jpg',
+  'images/hero-img_2.jpg',
+  'images/hero-img_3.jpg',
+  'images/hero-img_4.jpg',
+  'images/hero-img_5.jpg',
+  'images/hero-img_6.jpg',
+  'images/hero-img_7.jpg',
+  'images/hero-img_8.jpg',
+  'images/hero-img_9.jpg',
+];
+
 export const intro =
   'Στο ιατρείο μας ασχολούμαστε αποκλειστικά με την Ορθοδοντική χρησιμοποιώντας όλες τις σύγχρονες μεθόδους για μια ορθοδοντική θεραπεία ανώδυνη, ευχάριστη και με διάφορες "αόρατες" τεχνικές.';
 
