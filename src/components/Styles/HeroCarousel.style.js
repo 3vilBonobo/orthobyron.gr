@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const StyledHeroCarouselWrapper = styled.div`
   width: 100%;
-  padding: 3.5rem 1rem;
 `;
 
 export const StyledHeroCarouselImageWrapper = styled.div`
@@ -11,11 +10,15 @@ export const StyledHeroCarouselImageWrapper = styled.div`
   justify-content: center;
 `;
 
-export const StyledHeroCarouselImage = styled.img`
-  max-width: 400px;
-  height: auto;
+export const StyledHeroCarouselSlide = styled.div`
+  background-image: url('${(props) => props.props}');
+  width: 100%;
+  height: 80vh;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @media screen and (min-width: 768px) {
-    width: 900px;
-    height: auto;
   }
 `;

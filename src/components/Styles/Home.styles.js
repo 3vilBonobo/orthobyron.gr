@@ -11,6 +11,7 @@ export const StyledMain = styled.div`
 `;
 export const StyledHero = styled.div`
   width: 100%;
+
   position: relative;
   display: flex;
   align-items: center;
@@ -126,18 +127,6 @@ export const StyledHeroBtn = styled.a`
   }
   @media screen and (min-width: 768px) {
     top: 20rem;
-  }
-`;
-
-export const StyledHeroVideo = styled.video`
-  width: 100%;
-  height: 80vh;
-  object-fit: none;
-  position: relative;
-  top: -100px;
-  @media screen and (min-width: 768px) {
-    object-fit: cover;
-    height: auto;
   }
 `;
 

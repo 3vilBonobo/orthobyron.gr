@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {
   StyledHeroCarouselWrapper,
-  StyledHeroCarouselTitle,
   StyledHeroCarouselImageWrapper,
-  StyledHeroCarouselImage,
+  StyledHeroCarouselSlide,
 } from '../components/styles/HeroCarousel.style';
 import Slider from 'react-slick';
 import '../../node_modules/slick-carousel/slick/slick.css';
@@ -14,6 +13,8 @@ export default class HeroCarousel extends Component {
   render() {
     const settings = {
       dots: true,
+      fade: true,
+
       arrows: false,
       infinite: true,
       speed: 3000,
@@ -28,7 +29,7 @@ export default class HeroCarousel extends Component {
           {heroImages.map((item, index) => {
             return (
               <StyledHeroCarouselImageWrapper key={index}>
-                <StyledHeroCarouselImage src={item} alt="" />
+                <StyledHeroCarouselSlide props={item} alt="" />
               </StyledHeroCarouselImageWrapper>
             );
           })}
