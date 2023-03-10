@@ -5,13 +5,14 @@ export const StyledFormContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  padding: 3rem 0;
 `;
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  max-width: 300px;
   @media screen and (min-width: 768px) {
     max-width: 500px;
   }
@@ -20,9 +21,9 @@ export const StyledFormTitle = styled.h2``;
 
 export const StyledFormInput = styled.input`
   font-size: 1.2rem;
-  min-width: 400px;
+  min-width: 320px;
   padding: 1rem 2rem;
-  margin: 1rem;
+  margin: 1rem 0rem;
   border-radius: 10px;
 `;
 export const StyledFormSelect = styled.select`

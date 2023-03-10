@@ -12,12 +12,11 @@ import { heroImages } from '../data/data';
 export default class HeroCarousel extends Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       fade: true,
-
       arrows: false,
       infinite: true,
-      speed: 3000,
+      speed: 2000,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,

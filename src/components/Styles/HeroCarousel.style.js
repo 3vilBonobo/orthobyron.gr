@@ -13,7 +13,7 @@ export const StyledHeroCarouselImageWrapper = styled.div`
 export const StyledHeroCarouselSlide = styled.div`
   background-image: url('${(props) => props.props}');
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
