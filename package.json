@@ -1,7 +1,7 @@
 {
   "name": "orthobyron",
   "version": "0.1.0",
-  "homepage": "https://3vilbonobo.github.io/orthobyron.gr",
+  "homepage": "npm",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
