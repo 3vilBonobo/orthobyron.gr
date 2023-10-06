@@ -8,7 +8,7 @@ import {
   StyledClinicsInfo,
   StyledClinicsCarouselSection,
 } from '../styles/Clinics.style';
-import { StyledClinicsCarouselWrapper } from '../styles/ClinicsCarousel.style';
+// import { StyledClinicsCarouselWrapper } from '../styles/ClinicsCarousel.style';
 const Clinics = () => {
   return (
     <StyledClinicsMainSection>
@@ -31,10 +31,10 @@ const Clinics = () => {
         ></StyledClinicsInfo>
       </StyledClinicsInfoWrapper>
       <StyledClinicsCarouselSection>
-        <StyledClinicsCarouselWrapper>
-          <ClinicsCarousel clinic={clinicsImages.byron} />
-          <ClinicsCarousel clinic={clinicsImages.piraeus} />
-        </StyledClinicsCarouselWrapper>
+        {/* <StyledClinicsCarouselWrapper> */}
+        <ClinicsCarousel clinic={clinicsImages.byron} />
+        <ClinicsCarousel clinic={clinicsImages.piraeus} />
+        {/* </StyledClinicsCarouselWrapper> */}
       </StyledClinicsCarouselSection>
     </StyledClinicsMainSection>
   );

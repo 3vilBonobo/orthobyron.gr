@@ -14,10 +14,7 @@ export const StyledClinicsCarouselWrapper = styled.div`
 `;
 
 export const StyledClinicsCarouselBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 400px;
 `;
 
 export const StyledClinicsCarouselTitle = styled.h3`
