@@ -13,7 +13,7 @@ export const StyledWorkHoursWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 350px;
+  width: 400px;
   background-color: transparent;
   padding: 1rem 3rem;
   @media screen and (min-width: 768px) {
