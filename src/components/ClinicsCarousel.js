@@ -15,7 +15,7 @@ export default class ClinicsCarousel extends Component {
       dots: true,
       arrows: false,
       infinite: true,
-      speed: 3000,
+      speed: 6000,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
