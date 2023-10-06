@@ -3,9 +3,21 @@ import styled from 'styled-components';
 export const StyledClinicsCarouselWrapper = styled.div`
   width: 100%;
   padding: 3.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   @media screen and (min-width: 768px) {
-    width: 40%;
+    flex-direction: row;
+    padding-inline: 7rem;
   }
+`;
+
+export const StyledClinicsCarouselBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const StyledClinicsCarouselTitle = styled.h3`

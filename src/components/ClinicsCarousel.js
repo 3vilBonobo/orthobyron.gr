@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  StyledClinicsCarouselWrapper,
+  StyledClinicsCarouselBox,
   StyledClinicsCarouselTitle,
   StyledClinicsCarouselImageWrapper,
   StyledClinicsCarouselImage,
@@ -22,7 +22,7 @@ export default class ClinicsCarousel extends Component {
       draggable: true,
     };
     return (
-      <StyledClinicsCarouselWrapper>
+      <StyledClinicsCarouselBox>
         <StyledClinicsCarouselTitle>
           {this.props.clinic.title}
         </StyledClinicsCarouselTitle>
@@ -35,7 +35,7 @@ export default class ClinicsCarousel extends Component {
             );
           })}
         </Slider>
-      </StyledClinicsCarouselWrapper>
+      </StyledClinicsCarouselBox>
     );
   }
 }
