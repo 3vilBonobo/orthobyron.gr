@@ -25,7 +25,8 @@ const Navbar = () => {
     if (
       !sidebar &&
       menuRef.current &&
-      !menuRef.current.contains(event.target)
+      !menuRef.current.contains(event.target) &&
+      event.target.id === !'burgerMenu'
     ) {
       setSidebar(false);
     }
@@ -39,7 +40,7 @@ const Navbar = () => {
 
   return (
     <>
-      <StyledBurgerIcon onClick={ShowSidebar} />
+      <StyledBurgerIcon id="burgerMenu" onClick={ShowSidebar} />
       <StyledNavbarContainer sidebar={sidebar}>
         <StyledCloseIcon onClick={ShowSidebar} />
         <StyledMenuItems>

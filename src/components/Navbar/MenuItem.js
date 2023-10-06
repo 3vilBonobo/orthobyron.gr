@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import {
   StyledMenuArrow,
   StyledMenuLink,
@@ -8,7 +9,7 @@ import {
 import Submenu from './Submenu';
 import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 
-const MenuItem = ({ items, showSidebar }) => {
+const MenuItem = forwardRef(({ items, showSidebar }, ref) => {
   const [width, setWidth] = useState(0);
 
   const btnRef = useRef('');
@@ -49,7 +50,7 @@ const MenuItem = ({ items, showSidebar }) => {
   }, []);
 
   return (
-    <>
+    <div ref={ref}>
       {items.submenu ? (
         <li>
           <StyledLinkAndMenuContainer>
@@ -79,8 +80,8 @@ const MenuItem = ({ items, showSidebar }) => {
           {items.title}
         </StyledMenuLink>
       )}
-    </>
+    </div>
   );
-};
+});
 
 export default MenuItem;
