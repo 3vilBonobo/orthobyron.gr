@@ -15,6 +15,7 @@ export const StyledClinicsCarouselWrapper = styled.div`
 
 export const StyledClinicsCarouselBox = styled.div`
   width: 400px;
+  height: auto;
 `;
 
 export const StyledClinicsCarouselTitle = styled.h3`
